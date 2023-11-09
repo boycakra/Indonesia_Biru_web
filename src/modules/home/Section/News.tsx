@@ -32,15 +32,19 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         }
     };
     const goToPrevious = () => {
-        sliderRef.current?.slickPrev();
-        setIsLastSlide(false);
-        setCurrentPagenation(currentPagenation - 1)
+        if (!isFirstSlide) {
+            sliderRef.current?.slickPrev();
+            setIsLastSlide(false);
+            setCurrentPagenation(currentPagenation - 1)
+        }
     };
 
     const goToNext = () => {
-        sliderRef.current?.slickNext();
-        setIsFirstSlide(false);
-        setCurrentPagenation(currentPagenation + 1)
+        if (!isLastSlide) {
+            sliderRef.current?.slickNext();
+            setIsFirstSlide(false);
+            setCurrentPagenation(currentPagenation + 1)
+        }
     };
     return (
         <div className="container-news" ref={ref}>

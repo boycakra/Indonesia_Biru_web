@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useEffect, useRef } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
 
@@ -11,6 +12,8 @@ import imgWhyDive1 from '../../assets/images/whyDive1.png'
 import imgWhyDive2 from '../../assets/images/whyDive2.png'
 import imgWhyDive3 from '../../assets/images/whyDive3.png'
 import imgWhyDive4 from '../../assets/images/whyDive4.png'
+
+import { Popover, Steps } from 'antd';
 
 const DiveWithUs = () => {
     const paketRef = useRef<HTMLDivElement>(null);
@@ -26,6 +29,18 @@ const DiveWithUs = () => {
             paketRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
+    const customDot = (dot: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined, { status, index }: any) => (
+        <Popover
+            content={
+                <span>
+                    step {index} status: {status}
+                </span>
+            }
+        >
+            {dot}
+        </Popover>
+    );
 
     return (
         <div className="container-dive-with-us">
@@ -238,6 +253,50 @@ const DiveWithUs = () => {
                         dives and feel free to request any timeline changes!
                     </div>
                 </div>
+                <div className="container-test">
+                    <div className="container-steps">
+                        <Steps
+                            style={{ display: 'inline-flex', height: '60px', marginTop: '120px' }}
+                            current={8}
+                            progressDot={customDot}
+                            items={[
+                                {
+                                    title: 'Pick Up',
+                                    description: '08:00 WITA',
+                                },
+                                {
+                                    title: 'Briefing & gear set-up',
+                                    description: '09:30 WITA',
+                                },
+                                {
+                                    title: 'First restorative dive',
+                                    description: '10:00 WITA',
+                                },
+                                {
+                                    title: 'Tour coral lab',
+                                    description: '11:15 WITA',
+                                },
+                                {
+                                    title: 'Snack',
+                                    description: '11:45 WITA',
+                                },
+                                {
+                                    title: 'Second restorative dive',
+                                    description: '12:00 WITA',
+                                },
+                                {
+                                    title: 'Lunch at local warung',
+                                    description: '13:30 WITA',
+                                },
+                                {
+                                    title: 'Transport back to Hotel',
+                                    description: '14:30 WITA',
+                                },
+                            ]}
+                        />
+                    </div>
+                </div>
+
             </div>
             <div className='container-map'>
                 <iframe src="https://restor.eco/embed/site/77e8a43f-0798-4347-8c7a-794f1c9211e3/" title="Kecinan Bay" width="100%" height="648"></iframe>

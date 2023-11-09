@@ -5,6 +5,10 @@ import imgMerchandise3 from "../../../assets/images/merchandise3.png";
 
 const Merchandise = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);
+    const handleClick = () => {
+        const url = `https://wa.me/6281353788090?text=`;
+        window.open(url, '_blank');
+    };
     return (
         <div className="container-merchandise" ref={ref}>
             <div className="detail-merchandise">
@@ -16,7 +20,7 @@ const Merchandise = React.forwardRef<HTMLDivElement>((props, ref) => {
                     {" "}<br />
                     Every piece sold spreads awareness and directly supports our work. 100% of the proceeds go towards directly funding our mission to protect Indonesia’s waters.
                 </div>
-                <button className="btn-merchandaise">
+                <button className="btn-merchandaise" onClick={handleClick}>
                     Visit Our Online Store
                 </button>
             </div>

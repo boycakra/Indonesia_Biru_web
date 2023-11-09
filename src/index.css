@@ -8,6 +8,13 @@ body {
   font-family: 'OpenSauceSansRegular', sans-serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 .navbar {
   background-color: #fff;
   color: var(--neutral-500, #121517);
@@ -64,7 +71,6 @@ body {
   font-weight: 600;
   line-height: 108%;
   border-left: 1px solid var(--neutral-100, #DEE4E8);
-  border-right: 1px solid var(--neutral-100, #DEE4E8);
   color: #000;
 }
 
@@ -74,10 +80,8 @@ body {
 }
 
 .container-btn-navbar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 24px;
+  padding: 15px 24px;
+  border-left: 1px solid var(--neutral-100, #DEE4E8);
 }
 
 .btn-navbar {
@@ -135,6 +139,12 @@ body {
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.txt-content-footer a {
+  text-decoration: none;
+  color: var(--neutral-300, #62686B);
 }
 
 .container-copy-right {
@@ -634,12 +644,20 @@ body {
   line-height: 140%;
 }
 
-.container-teams {
-  padding: 40px;
+.container-squad {
   border: 1px solid var(--neutral-100, #DEE4E8);
+}
+
+.container-teams {
+  border-bottom: 1px solid var(--neutral-100, #DEE4E8);
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   column-gap: 40px;
+}
+
+.container-teams:last-child {
+  border-bottom: none;
 }
 
 .img-team {
@@ -1197,4 +1215,53 @@ body {
 
 .container-diving-day {
   padding: 120px 80px;
+}
+
+.container-test {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+.container-steps {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ant-steps-item-icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: -6px !important;
+  margin-inline-start: 60px !important;
+}
+
+.ant-steps-icon-dot {
+  background: #0086CA !important;
+}
+
+.ant-steps-item-content {
+  width: 300px !important;
+  margin-top: -100px !important;
+  padding-left: 60px;
+  text-align: left !important;
+}
+
+.ant-steps-item-title {
+  color: var(--neutral-500, #121517) !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  text-transform: capitalize !important;
+}
+
+.ant-steps-item-description {
+  color: var(--neutral-300, #62686B) !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+
+}
+
+.ant-steps-item-tail::after {
+  background-color: #F4F7F9 !important;
 }

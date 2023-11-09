@@ -2,21 +2,25 @@ import React from 'react';
 import imgFounder from '../../../assets/images/founder.png';
 import imgTeam1 from '../../../assets/images/team1.png';
 import imgTeam2 from '../../../assets/images/team2.png';
+import imgTeam3 from '../../../assets/images/team3.png';
 
 const Team = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);
     const teams = [
         {
             img: imgTeam1,
-            name: "Malikul As’ad"
+            name: "Malikul As’ad",
+            title: 'Field Staff & Community Engagement Officer'
         },
         {
             img: imgTeam2,
-            name: "Fildzah Hulwani"
+            name: "Fildzah Hulwani",
+            title: 'Field Staff & Science Officer'
         },
         {
-            img: imgTeam1,
-            name: "Haerun Nizar"
+            img: imgTeam3,
+            name: "Haerun Nizar",
+            title: 'Coral Laboratory Technician'
         },
     ]
     return (
@@ -37,7 +41,7 @@ const Team = React.forwardRef<HTMLDivElement>((props, ref) => {
                         Founder of Indonesia Biru Foundation
                     </div>
                 </div>
-                <div>
+                <div className="container-squad">
                     {teams.map((e, index) => (
                         <div className="container-teams" key={`teams_${e.name}_${index}`}>
                             <img src={e.img} alt="team" className="img-team" />
@@ -46,7 +50,7 @@ const Team = React.forwardRef<HTMLDivElement>((props, ref) => {
                                     {e.name}
                                 </div>
                                 <div className="team-position">
-                                    Title
+                                    {e.title}
                                 </div>
                             </div>
                         </div>

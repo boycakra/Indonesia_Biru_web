@@ -2,9 +2,10 @@ import { useMyContext } from '../context/SectionProvider'
 
 import Logo from '../assets/images/Logo.svg'
 import waves from '../assets/icons/Waves.svg'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
+  const location = useLocation();
   const { updateValue } = useMyContext();
   return (
     <header>
@@ -45,12 +46,14 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <Link to={"/dive-with-us"}>
-            <div className="txt-link-navbar">
-              <img src={waves} alt="icon-waves" className="icon-waves" />
-              Dive With Us
-            </div>
-          </Link>
+          {location.pathname !== "/dive-with-us" && (
+            <Link to={"/dive-with-us"}>
+              <div className="txt-link-navbar">
+                <img src={waves} alt="icon-waves" className="icon-waves" />
+                Dive With Us
+              </div>
+            </Link>
+          )}
           <div className="container-btn-navbar">
             <a href='https://www.patreon.com/ibf' target="_blank" rel="noopener noreferrer">
               <button className='btn-navbar'>Donate</button>
