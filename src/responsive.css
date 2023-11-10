@@ -1140,6 +1140,7 @@
 
     .imgTable {
         width: 100%;
+        height: auto;
     }
 
     .container-why-dive-with-us {
@@ -1153,6 +1154,7 @@
     }
 
     .title-why-dive-with-us {
+        display: block;
         color: var(--neutral-500, #121517);
         font-size: 80px;
         font-style: normal;
@@ -1161,7 +1163,12 @@
         letter-spacing: -3.2px;
     }
 
+    .title-why-dive-with-us-mobile {
+        display: none;
+    }
+
     .desc-why-dove-with-us {
+        text-align: left;
         position: absolute;
         right: 10px;
         bottom: 0;
@@ -1175,6 +1182,7 @@
     .container-content-why-dive {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         column-gap: 40px;
     }
 
@@ -1192,7 +1200,12 @@
     }
 
     .container-diving-day {
+        display: block;
         padding: 120px 80px;
+    }
+
+    .container-diving-day-mobile {
+        display: none;
     }
 
     .container-test {

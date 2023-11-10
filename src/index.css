@@ -1098,13 +1098,13 @@ header {
 }
 
 .container-breadcrumb {
-  padding: 24px 80px;
+  padding: 16px;
 }
 
 .container-breadcrumb a {
   text-decoration: none;
   color: var(--neutral-300, #62686B);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -1112,7 +1112,7 @@ header {
 
 .container-breadcrumb span {
   color: var(--neutral-500, #121517);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
@@ -1127,38 +1127,37 @@ header {
 }
 
 .container-title-detail-news {
-  padding: 40px 80px 0;
+  padding: 20px 16px 10px;
 }
 
 .title-detail-news {
   color: var(--neutral-500, #121517);
-  font-size: 80px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 96%;
-  letter-spacing: -3.2px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 .date-detail-news {
   color: var(--neutral-500, #121517);
-  font-size: 32px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
 }
 
 .container-desc-detail-news {
-  padding: 40px 80px 80px;
+  padding: 16px 14px 40px;
 }
 
 .desc-detail-news {
   color: var(--neutral-300, #62686B);
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .desc-detail-news:last-child {
@@ -1167,11 +1166,11 @@ header {
 
 .img-detail-news {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .container-img-dive-with-us {
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 .img-dive-with-us {
@@ -1179,10 +1178,11 @@ header {
 }
 
 .container-paket-dive {
-  padding: 80px 80px 40px;
+  padding: 40px 16px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 16px;
+  row-gap: 12px;
 }
 
 .paket-dive {
@@ -1193,26 +1193,26 @@ header {
 
 .paket-dive-section-title {
   border-bottom: 1px solid var(--neutral-100, #DEE4E8);
-  padding: 24px;
+  padding: 16px;
 }
 
 .title-paket-dive {
   color: var(--neutral-500, #121517);
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 96%;
   letter-spacing: -1.28px;
-  margin: 16px 0;
+  margin: 12px 0;
 }
 
 .desc-pake-dive {
   color: var(--neutral-300, #62686B);
-  font-size: 18px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  height: 150px;
+  height: 90px;
 }
 
 .btn-paket-book {
@@ -1220,12 +1220,12 @@ header {
   border-radius: 80px;
   background: var(--brand-color-blue, #0086CA);
   border: none;
-  padding: 16px 32px;
+  padding: 12px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--neutral-0, #FFF);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 108%;
@@ -1238,7 +1238,7 @@ header {
 
 .dive-benefit-title {
   color: var(--neutral-300, #62686B);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
@@ -1259,7 +1259,7 @@ header {
 
 .dive-benefit-item-txt {
   color: var(--neutral-500, #121517);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1267,34 +1267,38 @@ header {
 }
 
 .container-price-list {
-  padding: 80px 80px 120px;
+  padding: 16px 16px 40px;
 }
 
 .title-price-list {
   color: var(--neutral-500, #121517);
-  font-size: 80px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 96%;
-  letter-spacing: -3.2px;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
+}
+
+.container-img-table {
+  overflow-x: auto;
 }
 
 .imgTable {
-  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
 }
 
 .container-why-dive-with-us {
   background: var(--background-grey, #F4F7F9);
-  padding: 120px 80px;
+  padding: 40px 16px;
 }
 
 .container-title-why-dive-with-us {
-  position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
 }
 
 .title-why-dive-with-us {
+  display: none;
   color: var(--neutral-500, #121517);
   font-size: 80px;
   font-style: normal;
@@ -1303,12 +1307,21 @@ header {
   letter-spacing: -3.2px;
 }
 
+.title-why-dive-with-us-mobile {
+  display: block;
+  text-align: center;
+  color: var(--neutral-500, #121517);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  margin-bottom: 12px;
+}
+
 .desc-why-dove-with-us {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
+  text-align: left;
   color: var(--neutral-300, #62686B);
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -1316,29 +1329,48 @@ header {
 
 .container-content-why-dive {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 20px;
 }
 
 .img-why-dive {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .decs-content-why-dive {
   color: var(--neutral-300, #62686B);
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
 
 .container-diving-day {
-  padding: 120px 80px;
+  padding: 40px 16px;
+  display: none;
+}
+
+.container-diving-day-mobile {
+  padding: 40px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-diving-day-mobile {
+  display: block;
+  color: var(--neutral-500, #121517);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  margin-bottom: 12px;
 }
 
 .container-test {
-  margin-top: 100px;
+  margin-top: 0;
   overflow-x: hidden;
 }
 

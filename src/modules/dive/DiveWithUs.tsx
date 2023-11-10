@@ -29,6 +29,10 @@ const DiveWithUs = () => {
             paketRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     }
+    const handleClickWa = () => {
+        const url = `https://wa.me/6281353788090?text=`;
+        window.open(url, '_blank');
+    };
 
     const customDot = (dot: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined, { status, index }: any) => (
         <Popover
@@ -69,7 +73,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Join our restorative dive to plant coral and learn about marine life. Explore our coral lab and discover IBF's activities.
                         </div>
-                        <button className="btn-paket-book">
+                        <button className="btn-paket-book" onClick={handleClickWa}>
                             Book Now
                         </button>
                     </div>
@@ -116,7 +120,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Contribute to coral reef restoration and explore Gili dive with combined dives. Plant corals and dive in the Gili islands.
                         </div>
-                        <button className="btn-paket-book">
+                        <button className="btn-paket-book" onClick={handleClickWa}>
                             Book Now
                         </button>
                     </div>
@@ -171,7 +175,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Non-divers can enjoy snorkeling at Kecinan Bay, known for its diverse coral and fish species. Explore coral garden, restoration site, and visit our coral lab.
                         </div>
-                        <button className="btn-paket-book">
+                        <button className="btn-paket-book" onClick={handleClickWa}>
                             Book Now
                         </button>
                     </div>
@@ -202,13 +206,18 @@ const DiveWithUs = () => {
                 <div className="title-price-list">
                     Price List
                 </div>
-                <img src={imgTable} alt="table" className="imgTable" />
+                <div className="container-img-table">
+                    <img src={imgTable} alt="table" className="imgTable" />
+                </div>
             </div>
             <div className="container-why-dive-with-us">
                 <div className="container-title-why-dive-with-us">
                     <div className="title-why-dive-with-us">
                         Why Dive<br />
                         With Us
+                    </div>
+                    <div className="title-why-dive-with-us-mobile">
+                        Why Dive With Us
                     </div>
                     <div className="desc-why-dove-with-us">
                         Our expert will dive alongside with you, to restore Indonesian<br />
@@ -259,6 +268,67 @@ const DiveWithUs = () => {
                             style={{ display: 'inline-flex', height: '60px', marginTop: '120px' }}
                             current={8}
                             progressDot={customDot}
+                            items={[
+                                {
+                                    title: 'Pick Up',
+                                    description: '08:00 WITA',
+                                },
+                                {
+                                    title: 'Briefing & gear set-up',
+                                    description: '09:30 WITA',
+                                },
+                                {
+                                    title: 'First restorative dive',
+                                    description: '10:00 WITA',
+                                },
+                                {
+                                    title: 'Tour coral lab',
+                                    description: '11:15 WITA',
+                                },
+                                {
+                                    title: 'Snack',
+                                    description: '11:45 WITA',
+                                },
+                                {
+                                    title: 'Second restorative dive',
+                                    description: '12:00 WITA',
+                                },
+                                {
+                                    title: 'Lunch at local warung',
+                                    description: '13:30 WITA',
+                                },
+                                {
+                                    title: 'Transport back to Hotel',
+                                    description: '14:30 WITA',
+                                },
+                            ]}
+                        />
+                    </div>
+                </div>
+
+            </div>
+            <div className="container-diving-day-mobile">
+                <div className="container-title-why-dive-with-us">
+                    <div className="title-why-dive-with-us">
+                        A Diving Day<br />
+                        With Us
+                    </div>
+                    <div className="title-diving-day-mobile">
+                        A Diving Day<br />
+                        With Us
+                    </div>
+                    <div className="desc-why-dove-with-us">
+                        Here's a snapshot of your diving day with us. Choose 1, 2, or 3 <br />
+                        dives and feel free to request any timeline changes!
+                    </div>
+                </div>
+                <div className="container-test">
+                    <div className="container-steps">
+                        <Steps
+                            style={{ display: 'inline-flex', height: '60px', marginTop: '120px' }}
+                            current={8}
+                            progressDot={customDot}
+                            direction="vertical"
                             items={[
                                 {
                                     title: 'Pick Up',
