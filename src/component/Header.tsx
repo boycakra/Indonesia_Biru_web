@@ -23,7 +23,9 @@ export default function Header() {
     bmMenu: {
       background: 'white', // Set the background color to red
       padding: '2.5em 1.5em 0',
-      width: '300px', // Adjust the width as needed
+      width: '300px',
+      position: 'fixed',
+      top: '50px'
     },
     bmMorphShape: {
       fill: '#373a47',

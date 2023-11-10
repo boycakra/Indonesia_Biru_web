@@ -331,7 +331,7 @@ const DiveWithUs = () => {
                 <div className="container-test">
                     <div className="container-steps">
                         <Steps
-                            style={{ display: 'inline-flex', height: '60px', marginTop: '120px' }}
+                            style={{ display: 'inline-flex', height: '120px', marginTop: '40px' }}
                             current={8}
                             progressDot={customDot}
                             direction="vertical"
