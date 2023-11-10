@@ -9,7 +9,6 @@
         border: 1px solid var(--neutral-100, #DEE4E8);
         background: #FFF;
         padding: 12px;
-        height: 450px;
     }
 }
 
@@ -388,7 +387,6 @@
         border: 1px solid var(--neutral-100, #DEE4E8);
         background: #FFF;
         padding: 24px;
-        height: 630px;
     }
 
     .img-restoration {
@@ -404,6 +402,15 @@
         font-weight: 600;
         line-height: 140%;
         margin-bottom: 16px;
+    }
+
+    .content-text-restoration {
+        color: var(--neutral-300, #62686B);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        height: 200px;
     }
 
     .content-desc-restoration {
@@ -1266,5 +1273,17 @@
 
     .ant-steps-item-tail::after {
         background-color: #F4F7F9 !important;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content-text-restoration {
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .content-text-restoration {
+        height: max-content;
     }
 }

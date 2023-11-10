@@ -315,10 +315,6 @@ const DiveWithUs = () => {
             </div>
             <div className="container-diving-day-mobile">
                 <div className="container-title-why-dive-with-us">
-                    <div className="title-why-dive-with-us">
-                        A Diving Day<br />
-                        With Us
-                    </div>
                     <div className="title-diving-day-mobile">
                         A Diving Day<br />
                         With Us
@@ -334,18 +330,18 @@ const DiveWithUs = () => {
                             style={{ display: 'inline-flex', height: '120px', marginTop: '40px' }}
                             current={8}
                             progressDot={customDot}
-                            direction="vertical"
+                            direction='horizontal'
                             items={[
                                 {
                                     title: 'Pick Up',
                                     description: '08:00 WITA',
                                 },
                                 {
-                                    title: 'Briefing & gear set-up',
+                                    title: <span>Briefing & <br /> gear set-up</span>,
                                     description: '09:30 WITA',
                                 },
                                 {
-                                    title: 'First restorative dive',
+                                    title: <span>First restorative <br /> dive</span>,
                                     description: '10:00 WITA',
                                 },
                                 {
@@ -357,15 +353,15 @@ const DiveWithUs = () => {
                                     description: '11:45 WITA',
                                 },
                                 {
-                                    title: 'Second restorative dive',
+                                    title: <span>Second <br /> restorative dive</span>,
                                     description: '12:00 WITA',
                                 },
                                 {
-                                    title: 'Lunch at local warung',
+                                    title: <span>Lunch at <br />local warung</span>,
                                     description: '13:30 WITA',
                                 },
                                 {
-                                    title: 'Transport back to Hotel',
+                                    title: <span>Transport back <br /> to Hotel</span>,
                                     description: '14:30 WITA',
                                 },
                             ]}

@@ -481,7 +481,7 @@ header {
   border: 1px solid var(--neutral-100, #DEE4E8);
   background: #FFF;
   padding: 12px;
-  height: 400px;
+  height: max-content;
 }
 
 .img-restoration {
@@ -501,6 +501,40 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
+}
+
+.content-text-restoration {
+  color: var(--neutral-300, #62686B);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  height: 200px;
+}
+
+@media screen and (min-width: 350px) {
+  .content-text-restoration {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .content-text-restoration {
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .content-text-restoration {
+    height: 100px;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  .content-text-restoration {
+    height: 80px;
+  }
 }
 
 .content-desc-restoration {
@@ -1382,6 +1416,7 @@ header {
   padding: 40px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
 }
 
 .title-diving-day-mobile {
@@ -1404,27 +1439,14 @@ header {
   white-space: nowrap;
 }
 
-.ant-steps-item-icon {
-  width: 20px !important;
-  height: 20px !important;
-  margin-top: -6px !important;
-  margin-inline-start: 60px !important;
-}
-
 .ant-steps-icon-dot {
   background: #0086CA !important;
 }
 
-.ant-steps-item-content {
-  width: 300px !important;
-  margin-top: -100px !important;
-  padding-left: 60px;
-  text-align: left !important;
-}
 
 .ant-steps-item-title {
   color: var(--neutral-500, #121517) !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
   line-height: normal !important;
   text-transform: capitalize !important;
@@ -1436,8 +1458,8 @@ header {
   font-style: normal !important;
   font-weight: 500 !important;
   line-height: normal !important;
-
 }
+
 
 .ant-steps-item-tail::after {
   background-color: #F4F7F9 !important;

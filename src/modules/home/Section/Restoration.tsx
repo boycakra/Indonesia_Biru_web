@@ -74,7 +74,7 @@ const Restoration = () => {
                         <div className="container-content-restoration">
                             <img src={imgRestoration1} alt="Slide 1" className="img-restoration" />
                             <div className="content-title-restoration">Harvesting</div>
-                            <div className="content-desc-restoration">
+                            <div className="content-text-restoration">
                                 Our team dives down and harvests either fragments of a healthy coral or locates smaller corals growing in unsuitable areas damaged by environmental degradation.
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const Restoration = () => {
                         <div className="container-content-restoration">
                             <img src={imgRestoration2} alt="Slide 2" className="img-restoration" />
                             <div className="content-title-restoration">Planting</div>
-                            <div className="content-desc-restoration">
+                            <div className="content-text-restoration">
                                 Our divers then securely attach these coral fragments to our various marine structures that serve as a foundation for these corals to grow and form healthy reefs.
                             </div>
                         </div>
@@ -92,7 +92,7 @@ const Restoration = () => {
                         <div className="container-content-restoration">
                             <img src={imgRestoration3} alt="Slide 3" className="img-restoration" />
                             <div className="content-title-restoration">Monitoring and Maintenance</div>
-                            <div className="content-desc-restoration">
+                            <div className="content-text-restoration">
                                 During our dives, we actively monitor the condition and assess the growth of the transplanted coral fragments. Algal control is vital step in maintaining our restored reefs.
                             </div>
                         </div>
@@ -101,8 +101,8 @@ const Restoration = () => {
                         <div className="container-content-restoration">
                             <img src={imgRestoration4} alt="Slide 4" className="img-restoration" />
                             <div className="content-title-restoration">Refinement</div>
-                            <div className="content-desc-restoration">
-                                We aim to learn from the data we collect and improve our methods. Coral restoration is a young field and our process of restoration evolves and adapts as we learn and streamline our methods.
+                            <div className="content-text-restoration">
+                                We strive to enhance our methods through learning from collected data, adapting and evolving our coral restoration process in this emerging field.
                             </div>
                         </div>
                     </div>
