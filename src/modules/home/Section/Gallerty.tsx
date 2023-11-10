@@ -48,6 +48,9 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                     Welcome to <br />
                     Our Gallery
                 </div>
+                <div className="title-gallery-mobile">
+                    Welcome to Our Gallery
+                </div>
                 <div className="container-btn-gallery">
                     <button className={`btn-slider ${isFirstSlide ? "disabled-btn" : ""}`} onClick={goToPrevious}>
                         <img src={arrowLeft} alt="arrow-left" />

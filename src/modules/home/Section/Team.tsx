@@ -41,6 +41,22 @@ const Team = React.forwardRef<HTMLDivElement>((props, ref) => {
                         Founder of Indonesia Biru Foundation
                     </div>
                 </div>
+                <div className="content-founder-team-mobile">
+                    <div className='container-founder-name-mobile'>
+                        <img src={imgFounder} alt="founder" className="img-founder" />
+                        <div className="container-detail-founder-mobile">
+                            <div className="founder-name">
+                                Andrean Saputra
+                            </div>
+                            <div className="founder-position">
+                                Founder of Indonesia Biru Foundation
+                            </div>
+                        </div>
+                    </div>
+                    <div className="desc-founder">
+                        “Andrean Saputra is a marine scientist and founder of Indonesia Biru Foundation (IBF), established in 2020. IBF champions marine conservation through research, restoration, and coastal community development centres in Lombok and the Gilis.”
+                    </div>
+                </div>
                 <div className="container-squad">
                     {teams.map((e, index) => (
                         <div className="container-teams" key={`teams_${e.name}_${index}`}>

@@ -29,7 +29,18 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             if (currentSlide === 3 && nextSlide === 0) {
                 setIsFirstSlide(true)
             }
-        }
+        },
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: true
+                }
+            }
+        ]
     };
     const goToPrevious = () => {
         if (!isFirstSlide) {

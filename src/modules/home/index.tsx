@@ -133,6 +133,68 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="container-card-list-mobile">
+                <div className='container-section-card-mobile'>
+                    <div className="card-item">
+                        <div className="container-card-title">
+                            <div className="card-title">
+                                Coral Fragments <br />
+                                Planted
+                            </div>
+                            <div className="card-detail-title">
+                                +100
+                            </div>
+                        </div>
+                        <div className="card-detail">
+                            5500+
+                        </div>
+                    </div>
+                    <div className="card-item">
+                        <div className="container-card-title">
+                            <div className="card-title">
+                                Mangrove <br />
+                                Seedlings Planted
+                            </div>
+                            <div className="card-detail-title">
+                                +200
+                            </div>
+                        </div>
+                        <div className="card-detail">
+                            3000+
+                        </div>
+                    </div>
+                </div>
+                <div className='container-section-card-mobile'>
+                    <div className="card-item">
+                        <div className="container-card-title">
+                            <div className="card-title">
+                                Local Communities <br />
+                                worked with
+                            </div>
+                            <div className="card-detail-title">
+                                +20
+                            </div>
+                        </div>
+                        <div className="card-detail">
+                            12
+                        </div>
+                    </div>
+                    <div className="card-item">
+                        <div className="container-card-title">
+                            <div className="card-title">
+                                Marine Structures <br />
+                                Deployed
+                            </div>
+                            <div className="card-detail-title">
+                                +100
+                            </div>
+                        </div>
+                        <div className="card-detail">
+                            1500+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <OurMission ref={missionRef} />
             <Restoration />
             <Coral ref={coralRef} />

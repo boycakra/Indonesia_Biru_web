@@ -41,7 +41,7 @@ const Coral = React.forwardRef<HTMLDivElement>((props, ref) => {
                     ))}
                 </div>
             </div>
-            <div className="container-content-coral">
+            <div className="container-content-coral-challenges">
                 <div>
                     <div className="content-title-coral">
                         The Challenges
@@ -51,6 +51,17 @@ const Coral = React.forwardRef<HTMLDivElement>((props, ref) => {
                     ))}
                 </div>
                 <img src={imgCoral2} alt="coral" className="img-coral" />
+            </div>
+            <div className="container-content-coral-mobile">
+                <img src={imgCoral2} alt="coral" className="img-coral-mobile" />
+                <div>
+                    <div className="content-title-coral">
+                        The Challenges
+                    </div>
+                    {content2.map((e, index) => (
+                        <div className="content-item-coral" key={`content_coral_2_${index}`} dangerouslySetInnerHTML={{ __html: e }} />
+                    ))}
+                </div>
             </div>
         </div>
     )

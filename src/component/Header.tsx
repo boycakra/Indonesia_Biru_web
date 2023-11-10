@@ -2,6 +2,7 @@ import { useMyContext } from '../context/SectionProvider'
 
 import Logo from '../assets/images/Logo.svg'
 import waves from '../assets/icons/Waves.svg'
+import burger from '../assets/icons/burger.svg'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
@@ -58,6 +59,9 @@ export default function Header() {
             <a href='https://www.patreon.com/ibf' target="_blank" rel="noopener noreferrer">
               <button className='btn-navbar'>Donate</button>
             </a>
+          </div>
+          <div className='container-burger-menu'>
+            <img src={burger} alt="burger" className="burger-icon" />
           </div>
         </div>
       </nav>

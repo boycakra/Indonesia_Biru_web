@@ -79,6 +79,52 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <div className="content-footer-mobile">
+                    <div className="section-content-footer">
+                        <div className="title-content-footer">
+                            Get in touch
+                        </div>
+                        <div className="txt-content-footer" onClick={handleClickGmail}>
+                            andre@indonesiabiru.id
+                        </div>
+                        <div className="txt-content-footer" onClick={handleClickWa}>
+                            +62 813-5378-8090
+                        </div>
+                    </div>
+                    <div className="section-content-footer-mobile">
+                        <div>
+                            <div className="title-content-footer">
+                                Who We Are
+                            </div>
+                            <div className="txt-content-footer">
+                                <Link to={"/"} onClick={() => updateValue("mission")}>
+                                    About IBF
+                                </Link>
+                            </div>
+                            <div className="txt-content-footer">
+                                <Link to={"/"} onClick={() => updateValue("gallery")}>
+                                    Gallery
+                                </Link>
+                            </div>
+                            <div className="txt-content-footer" style={{ marginBottom: 0 }}>
+                                <Link to={"/"} onClick={() => updateValue("team")}>
+                                    Meet the Team
+                                </Link>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="title-content-footer">
+                                Social Media
+                            </div>
+                            <div className="txt-content-footer" onClick={handleClickIFb}>
+                                Facebook
+                            </div>
+                            <div className="txt-content-footer" onClick={handleClickIg}>
+                                Instagram
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="container-copy-right">
                 <div className="content-copyright">

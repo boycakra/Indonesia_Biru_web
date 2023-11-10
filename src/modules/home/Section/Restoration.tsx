@@ -26,7 +26,19 @@ const Restoration = () => {
             if (currentSlide === 1 && nextSlide === 0) {
                 setIsFirstSlide(true)
             }
-        }
+        },
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            }
+        ]
+
     };
 
     const goToPrevious = () => {
