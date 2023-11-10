@@ -3,11 +3,21 @@ import Slider from 'react-slick';
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 import { useRef, useState } from 'react';
-import imgGallery1 from '../../../assets/images/gallery1.png';
-import imgGallery2 from '../../../assets/images/gallery2.png';
-import imgGallery3 from '../../../assets/images/gallery3.png';
-import imgGallery4 from '../../../assets/images/gallery4.png';
-import imgGallery5 from '../../../assets/images/gallery5.png';
+import imgGallery1 from '../../../assets/images/gallery1.jpg';
+import imgGallery2 from '../../../assets/images/gallery2.jpg';
+import imgGallery3 from '../../../assets/images/gallery3.jpg';
+import imgGallery4 from '../../../assets/images/gallery4.jpg';
+import imgGallery5 from '../../../assets/images/gallery5.jpg';
+import imgGallery6 from '../../../assets/images/gallery6.jpg';
+import imgGallery7 from '../../../assets/images/gallery7.jpg';
+import imgGallery8 from '../../../assets/images/gallery8.jpg';
+import imgGallery9 from '../../../assets/images/gallery9.jpg';
+import imgGallery10 from '../../../assets/images/gallery10.jpg';
+import imgGallery11 from '../../../assets/images/gallery11.jpg';
+import imgGallery12 from '../../../assets/images/gallery12.jpg';
+import imgGallery13 from '../../../assets/images/gallery13.jpg';
+import imgGallery14 from '../../../assets/images/gallery14.jpg';
+import imgGallery15 from '../../../assets/images/gallery15.jpg';
 
 
 const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
@@ -75,24 +85,24 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                     </div>
                     <div className="container-gallerty-slide">
                         <div className="container-gallery-row-1">
-                            <img src={imgGallery1} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery2} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery6} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery7} alt="gallery" className="img-gallery" />
                         </div>
                         <div className="container-gallery-row-2">
-                            <img src={imgGallery3} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery4} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery5} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery8} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery9} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery10} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
                     <div className="container-gallerty-slide">
                         <div className="container-gallery-row-1">
-                            <img src={imgGallery1} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery2} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery11} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery12} alt="gallery" className="img-gallery" />
                         </div>
                         <div className="container-gallery-row-2">
-                            <img src={imgGallery3} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery4} alt="gallery" className="img-gallery" />
-                            <img src={imgGallery5} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery13} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery14} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery15} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
                 </Slider>

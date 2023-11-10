@@ -3,11 +3,52 @@ import { useMyContext } from '../context/SectionProvider'
 import Logo from '../assets/images/Logo.svg'
 import waves from '../assets/icons/Waves.svg'
 import burger from '../assets/icons/burger.svg'
+import { slide as Menu } from 'react-burger-menu'
 import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Header() {
+  const menuStyles = {
+    bmCrossButton: {
+      height: '30px',
+      width: '30px',
+    },
+    bmCross: {
+      background: '#bdc3c7',
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%',
+    },
+    bmMenu: {
+      background: 'white', // Set the background color to red
+      padding: '2.5em 1.5em 0',
+      width: '300px', // Adjust the width as needed
+    },
+    bmMorphShape: {
+      fill: '#373a47',
+    },
+    bmItemList: {
+      color: '#b8b7ad',
+      padding: '0.8em',
+    },
+    bmItem: {
+      display: 'inline-block',
+    },
+    bmOverlay: {
+      background: 'transparent',
+    },
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
   const location = useLocation();
   const { updateValue } = useMyContext();
+
+  const handleClick = (value: string) => {
+    updateValue(value);
+    setIsOpen(false);
+  }
   return (
     <header>
       <nav className="navbar">
@@ -38,7 +79,7 @@ export default function Header() {
             </li>
             <li>
               <Link to={"/"} onClick={() => updateValue("merchandise")}>
-                Marchandise
+                Merchandise
               </Link>
             </li>
             <li>
@@ -61,7 +102,52 @@ export default function Header() {
             </a>
           </div>
           <div className='container-burger-menu'>
-            <img src={burger} alt="burger" className="burger-icon" />
+            <Menu
+              isOpen={isOpen}
+              onOpen={() => setIsOpen(true)}
+              onClose={() => setIsOpen(false)}
+              styles={menuStyles}
+              right
+              customBurgerIcon={<img src={burger} alt="burger" className="burger-icon" />}
+            >
+              <div className='txt-burger-menu' onClick={() => handleClick("mission")}>
+                <Link to={"/"}>
+                  Our Mission
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("coral")}>
+                <Link to={"/"}>
+                  Coral Reef
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("team")}>
+                <Link to={"/"}>
+                  Team
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("gallery")}>
+                <Link to={"/"}>
+                  Gallery
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("merchandise")}>
+                <Link to={"/"}>
+                  Merchandise
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("news")}>
+                <Link to={"/"}>
+                  News
+                </Link>
+              </div>
+              {location.pathname !== '/dive-with-us' && (
+                <div className='txt-burger-menu' onClick={() => handleClick("")}>
+                  <Link to={"/dive-with-us"}>
+                    Dive With us
+                  </Link>
+                </div>
+              )}
+            </Menu>
           </div>
         </div>
       </nav>

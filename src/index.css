@@ -92,6 +92,19 @@ header {
   border-left: 1px solid var(--neutral-100, #DEE4E8);
 }
 
+.txt-burger-menu {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: #000;
+}
+
+.txt-burger-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
 .container-footer {
   background: var(--background-grey, #F4F7F9);
   padding: 40px 16px;
@@ -1067,6 +1080,7 @@ header {
 }
 
 .container-img-company {
+  padding: 15px 0;
   position: relative;
 }
 
@@ -1083,12 +1097,12 @@ header {
 @keyframes company {
   0% {
     opacity: 0;
-    top: 20px;
+    top: 30px;
   }
 
   100% {
     opacity: 1;
-    top: -10px;
+    top: 0px;
   }
 }
 
@@ -1399,7 +1413,7 @@ header {
 
 .ant-steps-item-title {
   color: var(--neutral-500, #121517) !important;
-  font-size: 24px !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
   line-height: normal !important;
   text-transform: capitalize !important;
@@ -1407,7 +1421,7 @@ header {
 
 .ant-steps-item-description {
   color: var(--neutral-300, #62686B) !important;
-  font-size: 16px !important;
+  font-size: 12px !important;
   font-style: normal !important;
   font-weight: 500 !important;
   line-height: normal !important;

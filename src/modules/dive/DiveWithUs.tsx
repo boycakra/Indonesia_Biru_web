@@ -2,6 +2,7 @@
 import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useEffect, useRef } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
+import queryString from 'query-string';
 
 import arrow from '../../assets/icons/Arrow-down.svg'
 import wavesBlack from '../../assets/icons/Waves-black.svg'
@@ -29,9 +30,14 @@ const DiveWithUs = () => {
             paketRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     }
-    const handleClickWa = () => {
-        const url = `https://wa.me/6281353788090?text=`;
+    const handleClickWa = (message: string) => {
+        const url = `https://api.whatsapp.com/send?${queryString.stringify({
+            phone: "6281353788090",
+            text: message,
+        })}`;
+
         window.open(url, '_blank');
+
     };
 
     const customDot = (dot: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined, { status, index }: any) => (
@@ -73,7 +79,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Join our restorative dive to plant coral and learn about marine life. Explore our coral lab and discover IBF's activities.
                         </div>
-                        <button className="btn-paket-book" onClick={handleClickWa}>
+                        <button className="btn-paket-book" onClick={() => handleClickWa("Hi, I want to book Restorative Dive")}>
                             Book Now
                         </button>
                     </div>
@@ -120,7 +126,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Contribute to coral reef restoration and explore Gili dive with combined dives. Plant corals and dive in the Gili islands.
                         </div>
-                        <button className="btn-paket-book" onClick={handleClickWa}>
+                        <button className="btn-paket-book" onClick={() => handleClickWa("Hi, I want to book Combined Dive")}>
                             Book Now
                         </button>
                     </div>
@@ -175,7 +181,7 @@ const DiveWithUs = () => {
                         <div className="desc-pake-dive">
                             Non-divers can enjoy snorkeling at Kecinan Bay, known for its diverse coral and fish species. Explore coral garden, restoration site, and visit our coral lab.
                         </div>
-                        <button className="btn-paket-book" onClick={handleClickWa}>
+                        <button className="btn-paket-book" onClick={() => handleClickWa("Hi, I want to book Snorkeling")}>
                             Book Now
                         </button>
                     </div>
@@ -189,7 +195,7 @@ const DiveWithUs = () => {
                         </div>
                         <div className="dive-benefit-item">
                             <img src={check} alt="check" className="check-icon" />
-                            <div className="dive-benefit-item-txt">No need for PADI certificate</div>
+                            <div className="dive-benefit-item-txt">No need for Diving License</div>
                         </div>
                         <div className="dive-benefit-item">
                             <img src={check} alt="check" className="check-icon" />

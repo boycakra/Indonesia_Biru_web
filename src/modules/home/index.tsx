@@ -111,7 +111,7 @@ const Home = () => {
                             worked with
                         </div>
                         <div className="card-detail-title">
-                            +20
+                            +2
                         </div>
                     </div>
                     <div className="card-detail">
@@ -172,7 +172,7 @@ const Home = () => {
                                 worked with
                             </div>
                             <div className="card-detail-title">
-                                +20
+                                +2
                             </div>
                         </div>
                         <div className="card-detail">
