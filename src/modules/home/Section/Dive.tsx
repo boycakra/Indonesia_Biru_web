@@ -1,4 +1,3 @@
-import imgDive from "../../../assets/images/dive.png";
 import { Link } from "react-router-dom";
 
 const Dive = () => {
@@ -17,7 +16,13 @@ const Dive = () => {
                     </button>
                 </Link>
             </div>
-            <img src={imgDive} alt="dive" className="img-dive" />
+            <iframe
+                className="youtube-dive"
+                title="YouTube Video"
+                src={`https://www.youtube.com/embed/U3ozG4YGCxc`}
+                frameBorder="0"
+                allowFullScreen
+            />
         </div>
     )
 }

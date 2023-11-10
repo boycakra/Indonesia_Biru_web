@@ -7,6 +7,9 @@ import {
 
 import Home from '../../modules/home';
 import DetailNews from '../../modules/news/DetailNews';
+import DetailNews2 from '../../modules/news/DetailNews2';
+import DetailNews3 from '../../modules/news/DetailNews3';
+import DetailNews4 from '../../modules/news/DetailNews4';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -23,6 +26,18 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news",
                     element: <DetailNews />
+                },
+                {
+                    path: "detail-news-2",
+                    element: <DetailNews2 />
+                },
+                {
+                    path: "detail-news-3",
+                    element: <DetailNews3 />
+                },
+                {
+                    path: "detail-news-4",
+                    element: <DetailNews4 />
                 },
                 {
                     path: "dive-with-us",

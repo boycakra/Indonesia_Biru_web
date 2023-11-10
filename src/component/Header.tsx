@@ -10,6 +10,8 @@ import { useState } from 'react'
 export default function Header() {
   const menuStyles = {
     bmCrossButton: {
+      position: 'fixed',
+      top: '70px',
       height: '30px',
       width: '30px',
     },

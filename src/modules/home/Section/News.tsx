@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import imgNews1 from "../../../assets/images/news1.png";
 import imgNews2 from "../../../assets/images/news2.png";
 import imgNews3 from "../../../assets/images/news3.png";
+import imgNews4 from "../../../assets/images/news4.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
 const News = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);
-    const pagenition = ["1", "2", "3"]
     const sliderRef = useRef<Slider | null>(null);
     const [isLastSlide, setIsLastSlide] = useState(false);
     const [isFirstSlide, setIsFirstSlide] = useState(true);
@@ -20,13 +20,13 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 3 && nextSlide === 6) {
+            if (currentSlide === 0 && nextSlide === 1) {
                 setIsLastSlide(true)
             }
-            if (currentSlide === 3 && nextSlide === 0) {
+            if (currentSlide === 1 && nextSlide === 0) {
                 setIsFirstSlide(true)
             }
         },
@@ -73,97 +73,42 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
                         <Link to={"/detail-news"}>
                             <div className="container-content-restoration">
                                 <img src={imgNews1} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2022/2023</div>
+                                <div className="content-title-restoration">Planting Hope: How Indonesia Biru Foundation Restores Coral Reefs</div>
                                 <div className="content-desc-restoration">
-                                    We take small fragments of a healthy coral. And also, we make sure we do not take too much and weaken the healthy coral.
+                                    In the heart of paradise, on the beautiful island of Lombok, the Indonesia Biru Foundation (IBF) is silently scripting a tale of hope for the oceans. Established in 2020, this independent organization has been on a remarkable journey of coral reef research, restoration, and fostering the development of coastal communities. At its core, IBF carries the noble vision of increasing marine literacy among Indonesian citizens, and their approach is both scientific and deeply community-oriented.
                                 </div>
                             </div>
                         </Link>
                     </div>
                     <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
+                        <Link to={"/detail-news-2"}>
                             <div className="container-content-restoration">
                                 <img src={imgNews2} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2021/2022</div>
+                                <div className="content-title-restoration">Project Reef Support</div>
                                 <div className="content-desc-restoration">
-                                    After this we clean the spider constructions and tie the fragments onto these. Here the corals can form and create a new colony.
+                                    Since the 1950’s more than half of the coral reefs worldwide have decayed. If this trend continues, we will have lost or severely damaged over 90% of all coral reefs by 2050. The main causes: global warming, destructive fishing and pollution of our oceans and seas.
                                 </div>
                             </div>
                         </Link>
                     </div>
                     <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
+                        <Link to={"/detail-news-3"}>
                             <div className="container-content-restoration">
                                 <img src={imgNews3} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">RESTORASI TERUMBU</div>
+                                <div className="content-title-restoration">Empowering Marine Conservation: Indonesia Biru Foundation's Journey in Coral Restoration and Eco-Tourism</div>
                                 <div className="content-desc-restoration">
-                                    During our dives, we actively monitor the condition and assess the development of the coral fragments that have been planted.
+                                    In the heart of Indonesia Biru Foundation, led by Raditya Andrean Saputra, M.Sc., is rewriting the narrative of marine conservation. Their Coral Lab at "ECO KECINAN" isn't just a scientific haven; it's a call to action for non-divers and non-scientists to engage with the urgent dialogue surrounding our oceans.
                                 </div>
                             </div>
                         </Link>
                     </div>
                     <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
+                        <Link to={"/detail-news-4"}>
                             <div className="container-content-restoration">
-                                <img src={imgNews1} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2022/2023</div>
+                                <img src={imgNews4} alt="Slide 1" className="img-restoration" />
+                                <div className="content-title-restoration">Nurturing Coral Life: The Stages of Coral Restoration</div>
                                 <div className="content-desc-restoration">
-                                    We take small fragments of a healthy coral. And also, we make sure we do not take too much and weaken the healthy coral.
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
-                            <div className="container-content-restoration">
-                                <img src={imgNews2} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2021/2022</div>
-                                <div className="content-desc-restoration">
-                                    After this we clean the spider constructions and tie the fragments onto these. Here the corals can form and create a new colony.
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
-                            <div className="container-content-restoration">
-                                <img src={imgNews3} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">RESTORASI TERUMBU</div>
-                                <div className="content-desc-restoration">
-                                    During our dives, we actively monitor the condition and assess the development of the coral fragments that have been planted.
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
-                            <div className="container-content-restoration">
-                                <img src={imgNews1} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2022/2023</div>
-                                <div className="content-desc-restoration">
-                                    We take small fragments of a healthy coral. And also, we make sure we do not take too much and weaken the healthy coral.
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
-                            <div className="container-content-restoration">
-                                <img src={imgNews2} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">Delft 2021/2022</div>
-                                <div className="content-desc-restoration">
-                                    After this we clean the spider constructions and tie the fragments onto these. Here the corals can form and create a new colony.
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="carousel-slide">
-                        <Link to={"/detail-news"}>
-                            <div className="container-content-restoration">
-                                <img src={imgNews3} alt="Slide 1" className="img-restoration" />
-                                <div className="content-title-restoration">RESTORASI TERUMBU</div>
-                                <div className="content-desc-restoration">
-                                    During our dives, we actively monitor the condition and assess the development of the coral fragments that have been planted.
+                                    Coral restoration is a delicate and crucial endeavor undertaken by organizations like the Indonesia Biru Foundation (IBF). The process involves several stages, each of which contributes to the revival of our coral reefs and the preservation of marine ecosystems.
                                 </div>
                             </div>
                         </Link>
@@ -174,12 +119,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
                 <button className={`btn-slider ${isFirstSlide ? "disabled-btn" : ""}`} onClick={goToPrevious}>
                     <img src={arrowLeft} alt="arrow-left" />
                 </button>
-                <div className="container-pagination-news">
-                    {pagenition.map((e, index) => (
-                        <div className={`pagenation ${index === currentPagenation ? "isActive" : ""}`} >{e}</div>
-                    ))}
-                </div>
-                <button className={`btn-slider ${isLastSlide ? "disabled-btn" : ""}`} style={{ marginLeft: 0 }} onClick={goToNext}>
+                <button className={`btn-slider ${isLastSlide ? "disabled-btn" : ""}`} onClick={goToNext}>
                     <img src={arrowRight} alt="arrow-right" />
                 </button>
             </div>
