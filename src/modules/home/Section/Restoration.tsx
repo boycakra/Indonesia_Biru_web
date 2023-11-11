@@ -93,7 +93,7 @@ const Restoration = () => {
                             <img src={imgRestoration3} alt="Slide 3" className="img-restoration" />
                             <div className="content-title-restoration">Monitoring and Maintenance</div>
                             <div className="content-text-restoration">
-                                During our dives, we actively monitor the condition and assess the growth of the transplanted coral fragments. Algal control is vital step in maintaining our restored reefs.
+                                During dives, we actively monitor the condition and assess the growth of the transplanted coral. Algal control is vital step in maintaining our restored reefs.
                             </div>
                         </div>
                     </div>
