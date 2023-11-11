@@ -32,7 +32,7 @@ const Coral = React.forwardRef<HTMLDivElement>((props, ref) => {
                 <img src={imgCoral1} alt="coral" className="img-coral" />
                 <div className="container-item-coral">
                     <div className="content-title-coral">
-                        Why We Need Coral?
+                        Why Do We Need Coral Reefs?
                     </div>
                     {content1.map((e, index) => (
                         <div className="content-item-coral" key={`content_coral_${index}`}>
