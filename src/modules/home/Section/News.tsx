@@ -1,10 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import imgNews1 from "../../../assets/images/news1.png";
 import imgNews2 from "../../../assets/images/news2.png";
 import imgNews3 from "../../../assets/images/news3.png";
 import imgNews4 from "../../../assets/images/news4.png";
+import imgNews5 from "../../../assets/images/news5.png";
+import imgNews6 from "../../../assets/images/resized_image.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -14,6 +16,8 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
     const [isLastSlide, setIsLastSlide] = useState(false);
     const [isFirstSlide, setIsFirstSlide] = useState(true);
     const [currentPagenation, setCurrentPagenation] = useState(0);
+    const [imageDimensions, setImageDimensions] = useState({ width: 528, height: 480 });
+
 
     const settings = {
         dots: false,
@@ -23,7 +27,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 0 && nextSlide === 1) {
+            if (currentSlide === 2 && nextSlide === 3) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -42,6 +46,23 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             }
         ]
     };
+    useEffect(() => {
+        // Fetch image dimensions dynamically
+        const img = new Image();
+        img.src = imgNews1;
+        img.onload = () => {
+            setImageDimensions({ width: img.width, height: img.height });
+        };
+    }, []);
+
+    
+    
+    const containerStyle = {
+        // Use imageDimensions to set the dimensions of the container
+        width: `${imageDimensions.width}px`,
+        height: `${imageDimensions.height}px`,
+    };
+
     const goToPrevious = () => {
         if (!isFirstSlide) {
             sliderRef.current?.slickPrev();
@@ -51,12 +72,15 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
     };
 
     const goToNext = () => {
+        
         if (!isLastSlide) {
             sliderRef.current?.slickNext();
             setIsFirstSlide(false);
             setCurrentPagenation(currentPagenation + 1)
         }
+        console.log(currentPagenation);
     };
+    
     return (
         <div className="container-news" ref={ref}>
             <div className="container-title-news">
@@ -94,7 +118,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
                     <div className="carousel-slide">
                         <Link to={"/detail-news-3"}>
                             <div className="container-content-restoration">
-                                <img src={imgNews3} alt="Slide 1" className="img-restoration" />
+                                <img src={imgNews3} alt="Slide 1" className="img-restoration"/>
                                 <div className="content-title-restoration">Empowering Marine Conservation: Indonesia Biru Foundation's Journey in Coral Restoration and Eco-Tourism</div>
                                 <div className="content-desc-restoration">
                                     In the heart of Indonesia Biru Foundation, led by Raditya Andrean Saputra, M.Sc., is rewriting the narrative of marine conservation. Their Coral Lab at "ECO KECINAN" isn't just a scientific haven; it's a call to action for non-divers and non-scientists to engage with the urgent dialogue surrounding our oceans.
@@ -109,6 +133,38 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
                                 <div className="content-title-restoration">Nurturing Coral Life: The Stages of Coral Restoration</div>
                                 <div className="content-desc-restoration">
                                     Coral restoration is a delicate and crucial endeavor undertaken by organizations like the Indonesia Biru Foundation (IBF). The process involves several stages, each of which contributes to the revival of our coral reefs and the preservation of marine ecosystems.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="carousel-slide">
+                        <Link to={"/detail-news-5"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews5}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={containerStyle}
+                                />
+                                <div className="content-title-restoration">Reevaluating Coral Rehabilitation: Lessons from Ghost Bay, Amed, Bali</div>
+                                <div className="content-desc-restoration">
+                                    In the pursuit of biodiversity preservation, Srikandi Bio Farma, along with the University of Udayana's Nature Enthusiast Students and Amed Dive Center, embarked on a coral conservation mission in Amed Ghost Bay in 2022. Despite employing coral transplantation, a common method for reef restoration, recent evaluations unearthed challenges that prompt a reconsideration of future initiatives.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="carousel-slide">
+                        <Link to={"/detail-news-6"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews6}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    
+                                />
+                                <div className="content-title-restoration">Reevaluating Coral Rehabilitation: Lessons from Ghost Bay, Amed, Bali</div>
+                                <div className="content-desc-restoration">
+                                    In the pursuit of biodiversity preservation, Srikandi Bio Farma, along with the University of Udayana's Nature Enthusiast Students and Amed Dive Center, embarked on a coral conservation mission in Amed Ghost Bay in 2022. Despite employing coral transplantation, a common method for reef restoration, recent evaluations unearthed challenges that prompt a reconsideration of future initiatives.
                                 </div>
                             </div>
                         </Link>
