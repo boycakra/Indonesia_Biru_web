@@ -3,6 +3,7 @@ import { useMyContext } from '../../context/SectionProvider';
 
 import arrow from '../../assets/icons/Arrow-down.svg'
 import OurMission from './Section/OurMission';
+import Event from './Section/Event';
 import Restoration from './Section/Restoration';
 import Coral from './Section/Coral';
 import Dive from './Section/Dive';
@@ -20,6 +21,7 @@ const Home = () => {
     const galleryRef = useRef<HTMLDivElement>(null);
     const merchandiseRef = useRef<HTMLDivElement>(null);
     const newsRef = useRef<HTMLDivElement>(null);
+    const eventRef = useRef<HTMLDivElement>(null);
 
     const { value } = useMyContext();
 
@@ -41,6 +43,9 @@ const Home = () => {
         }
         if (value === "news" && newsRef.current) {
             newsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        if (value === "Event" && eventRef.current) {
+            eventRef.current.scrollIntoView({ behavior: 'smooth' });
         }
         if (!value) {
             window.scrollTo({
@@ -203,6 +208,7 @@ const Home = () => {
             <Gallery ref={galleryRef} />
             <Merchandise ref={merchandiseRef} />
             <News ref={newsRef} />
+            <Event ref={eventRef} />
             <Reef />
             <Partner />
             <div className='container-map'>

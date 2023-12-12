@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
-import imgDetailNews from '../../assets/images/detailNews.png';
-import imgDescetailNews from '../../assets/images/descDetailNews.png';
+import imgDetailNews from '../../assets/images/dive site.png';
+import imgDescetailNews from '../../assets/images/site_cor.png';
 
 const DetailNews = () => {
     const { updateValue } = useMyContext();
@@ -23,34 +23,32 @@ const DetailNews = () => {
             </div>
             <div className="container-title-detail-news">
                 <div className="title-detail-news">
-                    Planting Hope: How Indonesia Biru Foundation Restores Coral Reefs
+                    Coral Reef Restoration In North Lombok Regency
                 </div>
                 <div className="date-detail-news">
-                    Boy Cakraningrat • November 6, 2023
+                    Indonesia Biru • January 1, 2021
                 </div>
             </div>
             <div className="container-desc-detail-news">
                 <div className="desc-detail-news">
                     Coral Reefs in Crisis <br />
-                    In the heart of paradise, on the beautiful island of Lombok, the Indonesia Biru Foundation (IBF) is silently scripting a tale of hope for the oceans. Established in 2020, this independent organization has been on a remarkable journey of coral reef research, restoration, and fostering the development of coastal communities. At its core, IBF carries the noble vision of increasing marine literacy among Indonesian citizens, and their approach is both scientific and deeply community-oriented. <br />
+                    The successful execution of the coral reef restoration project in North Lombok Regency marks a crucial milestone in the ongoing efforts to protect and rejuvenate these vital marine ecosystems. With the combined expertise of the diverse team, ranging from marine biologists and environmental scientists to skilled divers and community leaders, this project showcases the power of collaborative action in addressing environmental challenges <br />
                     {" "} <br />
-                    Through relentless research and method development, IBF strives to magnify its impact. Their commitment to finding the most effective ways to restore coral reefs is unwavering. It's a mission fueled by a deep love for the ocean and a profound sense of responsibility. <br />
+                    By restoring the health of the coral reefs, we are not only preserving the natural beauty and biodiversity of these underwater landscapes but also securing sustainable livelihoods for the local communities that depend on them. This project's achievements serve as an inspiring example of how science, technology, and community-driven initiatives can work hand in hand to make a positive impact on our environment.The coral reef restoration activities in ten locations in North Lombok Regency have been successfully completed. A total of 1,000 spider structures and over 10,000 coral fragments were planted. <br />
                     {" "} <br />
-                    IBF firmly believes that the local community plays a pivotal role in the restoration process. Their approach includes comprehensive community involvement, from education to participation in diving operations. It's not just about saving the reefs; it's about empowering the people who depend on these precious ecosystems. <br />
-                    {" "} <br />
-                    IBF recognizes that the scale of their work needs to expand for a more significant impact. Public awareness is the linchpin of their strategy. By shedding light on the urgency of coral reef preservation, they aim to rally support and action from the wider public. <br />
-                    {" "} <br />
-                    The process begins with the careful harvest of small fragments from healthy corals. IBF is meticulous to ensure they take just enough to create new life without weakening the existing coral colonies. It's a delicate balance they've mastered. <br />
-                </div>
+                    <   strong>The team involved in the coral reef restoration in North Lombok Regency including:</strong>
+                            <ul>
+                                <li>Two teams of Master's degree experts.</li>
+                                <li>Four scuba diving teams.</li>
+                                <li>Ten site supervisors.</li>
+                            </ul></div>
                 <img src={imgDescetailNews} alt="detail-news" className="img-detail-news" />
                 <div className="desc-detail-news">
-                    Once harvested, the fragments find their new home on specially crafted spider constructions. Here, the corals are given a chance to flourish, gradually forming new colonies. The act of planting hope for the reefs is akin to being a guardian of the sea. <br />
+                    Both on land and underwater, consisted of more than 150 individuals, Over 15 members from POKDARWIS/POKWASMAS/NGOs at each restoration site
+                    In addition to the successful restoration activities, the initiative has received positive feedback and support from local communities and authorities. This project is a significant step towards preserving the coral ecosystems in the region.
                     {" "} <br />
-                    The dedication doesn't stop at planting. During their dives, the IBF team monitors the condition and progress of the planted coral fragments. It's a nurturing process that requires constant attention and care. <br />
+                    Furthermore, the coral restoration project in North Lombok Regency has not only contributed to the recovery of coral ecosystems but has also fostered community engagement and awareness. Local residents and organizations actively participated in the restoration efforts, demonstrating their commitment to the protection of their natural environment. This collaboration not only benefits the marine environment but also empowers and educates the community about the importance of coral conservation, sustainable practices, and the overall health of their coastal ecosystem. It is a testament to the shared responsibility of safeguarding these precious natural resources for current and future generations.
                     {" "} <br />
-                    IBF doesn't rest on its laurels. They continuously learn from the data they collect and use it to refine their methods. This includes identifying which coral species show resilience in the face of adversity, a testament to their commitment to the environment. <br />
-                    {" "} <br />
-                    In the midst of breathtaking natural beauty, Indonesia Biru Foundation is working tirelessly to ensure that the underwater wonders of Lombok and beyond remain a source of awe and inspiration for generations to come. It's a story of hope, science, community, and an unwavering commitment to preserving our oceans. <br />
                 </div>
             </div>
         </div>

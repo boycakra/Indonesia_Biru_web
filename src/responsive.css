@@ -420,6 +420,14 @@
         font-weight: 400;
         line-height: 140%;
     }
+    /* Add this to your CSS */
+    .content-date-restoration {
+        color: var(--neutral-300, #62686B);
+        font-size: 14px; /* Adjust the font size as needed */
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
 
     .container-coral {
         padding: 120px 80px;
@@ -1274,6 +1282,86 @@
     .ant-steps-item-tail::after {
         background-color: #F4F7F9 !important;
     }
+
+
+
+    /* Event Style Container */
+
+    /* Responsive styles for container-event */
+    .container-event {
+        padding: 120px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+    
+    .detail-event {
+        position: relative;
+        height: auto;
+    }
+    
+    .title-event {
+        display: block;
+        margin-bottom: 40px;
+        color: var(--neutral-500, #121517);
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 96%;
+        letter-spacing: -3.2px;
+    }
+    
+    .title-event-mobile {
+        display: none;
+    }
+    
+    .desc-event {
+        color: var(--neutral-300, #62686B);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 80px;
+    }
+    
+    .container-btn-event {
+        display: block;
+    }
+    
+    .content-our-event {
+        /* Updated class name */
+        display: grid;
+        align-items: center;
+    }
+    
+    .container-btn-event-mobile {
+        display: none;
+    }
+    
+    .btn-event {
+        border-radius: 80px;
+        background: var(--brand-color-blue, #0086CA);
+        border: none;
+        padding: 16px 50px;
+        cursor: pointer;
+        color: var(--neutral-0, #FFF);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 108%;
+    }
+    
+
+    .container-content-our-event {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+    }
+    
+    .img-event {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (min-width: 1100px) {
@@ -1287,3 +1375,4 @@
         height: max-content;
     }
 }
+

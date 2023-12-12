@@ -3,21 +3,21 @@ import Slider from 'react-slick';
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 import { useRef, useState } from 'react';
-import imgGallery1 from '../../../assets/images/gallery1.png';
-import imgGallery2 from '../../../assets/images/gallery2.png';
-import imgGallery3 from '../../../assets/images/gallery3.png';
-import imgGallery4 from '../../../assets/images/gallery4.png';
-import imgGallery5 from '../../../assets/images/gallery5.png';
-import imgGallery6 from '../../../assets/images/gallery6.png';
-import imgGallery7 from '../../../assets/images/gallery7.png';
-import imgGallery8 from '../../../assets/images/gallery8.png';
-import imgGallery9 from '../../../assets/images/gallery9.png';
-import imgGallery10 from '../../../assets/images/gallery10.png';
-import imgGallery11 from '../../../assets/images/gallery11.png';
-import imgGallery12 from '../../../assets/images/gallery12.png';
-import imgGallery13 from '../../../assets/images/gallery13.png';
-import imgGallery14 from '../../../assets/images/gallery14.png';
-import imgGallery15 from '../../../assets/images/gallery15.png';
+import imgGallery1 from '../../../assets/images/awal (2).png';
+import imgGallery2 from '../../../assets/images/awal (3).png';
+import imgGallery3 from '../../../assets/images/baru (2).png';
+import imgGallery4 from '../../../assets/images/baru (3).png';
+import imgGallery5 from '../../../assets/images/baru (4).png';
+import imgGallery6 from '../../../assets/images/awal (5).png';
+import imgGallery7 from '../../../assets/images/awal (6).png';
+import imgGallery8 from '../../../assets/images/baru (13).png';
+import imgGallery9 from '../../../assets/images/baru (16).png';
+import imgGallery10 from '../../../assets/images/baru (20).png';
+import imgGallery11 from '../../../assets/images/new (2).png';
+import imgGallery12 from '../../../assets/images/awar (4).png';
+import imgGallery13 from '../../../assets/images/baru (12).png';
+import imgGallery14 from '../../../assets/images/test2.png';
+import imgGallery15 from '../../../assets/images/baru (25).png';
 
 
 const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {

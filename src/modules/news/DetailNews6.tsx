@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
-import imgDetailNews from '../../assets/images/detailNews5.png';
+import imgDetailNews from '../../assets/images/news6.png';
+import imgDescetailNews from '../../assets/images/descDetailNews6.png';
 
 const DetailNews5 = () => {
     const { updateValue } = useMyContext();
@@ -39,7 +40,7 @@ const DetailNews5 = () => {
                     Reconsidering Future Initiatives: 
                     The dominance of sandy substrate, algal overgrowth, and human activities emphasize the need for thorough pre-rehabilitation surveys. To ensure sustainable conservation efforts, future initiatives must consider the physical and chemical conditions of the chosen site, human activities, and stakeholder capacity for monitoring and maintenance.<br /><br />
                 </div>
-
+                <img src={imgDescetailNews} alt="detail-news" className="img-detail-news" />
                 <div className="desc-detail-news">
                 <   strong>Key Findings:</strong>
                             <ul>

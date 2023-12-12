@@ -26,7 +26,7 @@ const DetailNews3 = () => {
                     Empowering Marine Conservation: Indonesia Biru Foundation's Journey in Coral Restoration and Eco-Tourism
                 </div>
                 <div className="date-detail-news">
-                    Boy Cakraningrat • November 9, 2023
+                    Boy Cakraningrat • November 2, 2023
                 </div>
             </div>
             <div className="container-desc-detail-news">

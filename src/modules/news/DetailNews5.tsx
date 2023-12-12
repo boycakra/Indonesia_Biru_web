@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
-import imgDetailNews from '../../assets/images/detailNews6.png';
-import imgDescetailNews from '../../assets/images/descDetailNews6.png';
+import imgDetailNews from '../../assets/images/detailNews5.png';
+
 
 const DetailNews5 = () => {
     const { updateValue } = useMyContext();
@@ -23,7 +23,7 @@ const DetailNews5 = () => {
             </div>
             <div className="container-title-detail-news">
                 <div className="title-detail-news">
-                    Reevaluating Coral Rehabilitation: Lessons from Ghost Bay, Amed, Bali
+                    October Adventures with Blue Ranger 🌊: A Month of Ocean Conservation
                 </div>
                 <div className="date-detail-news">
                     Boy Cakraningrat • November 8, 2023
@@ -31,28 +31,35 @@ const DetailNews5 = () => {
             </div>
             <div className="container-desc-detail-news">
                 <div className="desc-detail-news">
-                    In the pursuit of biodiversity preservation, Srikandi Bio Farma, along with the University of Udayana's Nature Enthusiast Students and Amed Dive Center, embarked on a coral conservation mission in Amed Ghost Bay in 2022. Despite employing coral transplantation, a common method for reef restoration, recent evaluations unearthed challenges that prompt a reconsideration of future initiatives. <br /><br />
-
-                    Amed Ghost Bay, nestled in Karangasem, Bali, posed distinctive challenges. The sandy substrate dominated the transplant area, creating obstacles for coral larvae settlement. Algal overgrowth signaled a lack of regular cleaning, impacting coral growth on the structures. <br /><br />
-
-                    To assess the success of coral transplantation after a year, October 2023 saw the team conducting a comprehensive evaluation. Data on coral coverage, fish biodiversity, and invertebrate biodiversity were collected. Quadrant transects and visual censuses provided insights into the reef's condition. What did we see? Hardly any coral cover (just 2%), with sand taking up a whopping 85%. Fish were there, 17 types to be exact, including cool names like Sunburst Butterflyfish. But where were the invertebrates, the unsung heroes of a healthy coral hangout? <br /><br />
-
-                    Reconsidering Future Initiatives: 
-                    The dominance of sandy substrate, algal overgrowth, and human activities emphasize the need for thorough pre-rehabilitation surveys. To ensure sustainable conservation efforts, future initiatives must consider the physical and chemical conditions of the chosen site, human activities, and stakeholder capacity for monitoring and maintenance.<br /><br />
-                </div>
-
-                <img src={imgDescetailNews} alt="detail-news" className="img-detail-news" />
-                <div className="desc-detail-news">
-                <   strong>Key Findings:</strong>
-                            <ul>
-                                <li>Sandy Showdown: Sand dominated the coral playground, making it tricky for coral babies to find a comfy spot.</li>
-                                <li>Algae Takeover: Algae gate-crashed the coral space, competing for elbow room on the structures.</li>
-                                <li>Boats and Bumps: Busy boat traffic played a part in flipping structures and, unfortunately, breaking some coral hearts.</li>
-                            </ul>
-                             {" "} <br />
-                             The dominance of sandy substrate, algal overgrowth, and human activities underscore the necessity of thorough pre-rehabilitation surveys. Sustainable coral conservation demands a meticulous understanding of site conditions, human activities, and stakeholder capacity for monitoring and maintenance. While the Amed Ghost Bay project faced challenges, it offers invaluable insights. Sustainable coral conservation requires meticulous site selection, regular maintenance, and a nuanced understanding of the balance between natural and anthropogenic factors. As we recalibrate our approach, let the journey in Amed Ghost Bay guide us toward more effective and sustainable coral restoration practices. <br />
+                    
+                    <p>In the month of October, our journey with the Blue Ranger was filled with remarkable adventures, meaningful conversations, and exciting coral restoration efforts. Let's dive into the highlights of this month's activities, all aimed at raising awareness about the importance of protecting our oceans.</p>
+                    
+                    <p><strong>October 3: Coral Deployment at Medana Bay Marina</strong></p>
+                    <p>Our month kicked off with a hands-on coral deployment activity at Medana Bay Marina. We joined forces with passionate individuals to contribute to coral conservation and the preservation of marine life.</p>
+                    
+                    <p><strong>October 7: Nature and Human Responsibility</strong></p>
+                    <p>During the Sail Indonesia event, we took a moment to reflect on the crucial role of human responsibility in environmental issues. Our aim is to inspire more people to engage in discussions about preserving our planet.</p>
+                    
+                    <p><strong>October 8: The Enigmatic Electric Clam</strong></p>
+                    <p>We introduced you to the intriguing world of the Electric Clam, with its mesmerizing light display along the edge of its mantle. This unique feature has nothing to do with electricity but rather results from the reflection of ambient light. It's a natural wonder worth exploring.</p>
+                    {" "} <br />
+                    <p><strong>October 12: A Morning at IBFs' Coral Lab</strong></p>
+                    <p>We extended a warm invitation to the Blue Ranger to visit IBFs' coral lab, offering guided tours to witness the fascinating world of coral research and restoration.</p>
+                    
+                    <p><strong>October 19: Reflecting on Three Years of Ocean Conservation</strong></p>
+                    <p>In a heartfelt message, we looked back on three years of ocean conservation efforts. It's been a journey filled with growth and unexpected success, thanks to the support of countless individuals and organizations.</p>
+                    
+                    <p><strong>October 27: Assessing Coral Restoration in Ghost Bay, Bali</strong></p>
+                    <p>We shared our latest coral restoration assessment in Ghost Bay, Bali, initiated by @biofarmaid and @nakwdunud. The photos provided a glimpse into the health of the reef and the progress being made.</p>
+                   
+                    <p><strong>October 28: Unveiling the Mysteries of Ghost Bay</strong></p>
+                    <p>We explored the mysteries of Ghost Bay with captivating underwater photographs, showcasing coral-covered areas, sponge-dominated regions, and areas showing signs of damage. What could have caused these changes?</p>
+                    {" "} <br />
+                    <p>As we wrap up this month's adventures, we're more committed than ever to our mission of ocean conservation. Join us in our journey to protect and preserve the marine wonders that surround us. Together, we can make a difference.</p>
+                
                 </div>
             </div>
+
         </div>
     )
 }

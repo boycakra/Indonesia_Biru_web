@@ -26,7 +26,7 @@ const DetailNews4 = () => {
                     Nurturing Coral Life: The Stages of Coral Restoration
                 </div>
                 <div className="date-detail-news">
-                    Boy Cakraningrat • November 8, 2023
+                    Boy Cakraningrat • November 4, 2023
                 </div>
             </div>
             <div className="container-desc-detail-news">

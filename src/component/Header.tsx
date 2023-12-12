@@ -1,3 +1,4 @@
+
 import { useMyContext } from '../context/SectionProvider'
 
 import Logo from '../assets/images/Logo.svg'
@@ -91,6 +92,11 @@ export default function Header() {
                 News
               </Link>
             </li>
+            <li>
+              <Link to={"/"} onClick={() => updateValue("Event")}>
+                Event
+              </Link>
+            </li>
           </ul>
           {location.pathname !== "/dive-with-us" && (
             <Link to={"/dive-with-us"}>
@@ -142,6 +148,11 @@ export default function Header() {
               <div className='txt-burger-menu' onClick={() => handleClick("news")}>
                 <Link to={"/"}>
                   News
+                </Link>
+              </div>
+              <div className='txt-burger-menu' onClick={() => handleClick("Event")}>
+                <Link to={"/"}>
+                  Event
                 </Link>
               </div>
               {location.pathname !== '/dive-with-us' && (
