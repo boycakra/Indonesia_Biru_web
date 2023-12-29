@@ -34,7 +34,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 7 && nextSlide === 8) {
+            if (currentSlide === 9 && nextSlide === 10) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
