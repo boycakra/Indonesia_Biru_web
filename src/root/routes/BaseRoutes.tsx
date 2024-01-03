@@ -7,6 +7,7 @@ import {
 
 import Home from '../../modules/home';
 import DetailNews from '../../modules/news/DetailNews';
+import EventsDetail from '../../modules/Events/EventsDetails';
 import DetailNews1 from '../../modules/news/DetailNews1';
 import DetailNews2 from '../../modules/news/DetailNews2';
 import DetailNews3 from '../../modules/news/DetailNews3';
@@ -19,6 +20,7 @@ import DetailNews9 from '../../modules/news/DetailNews9';
 import DetailNews10 from '../../modules/news/DetailNews10';
 import DetailNews11 from '../../modules/news/DetailNews11';
 import DetailNews12 from '../../modules/news/DetailNews12';
+import DetailNews13 from '../../modules/news/DetailNews13';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -85,8 +87,16 @@ export default function BaseRoutes() {
                     element: <DetailNews12 />
                 },
                 {
+                    path: "detail-news-13",
+                    element: <DetailNews13 />
+                },
+                {
                     path: "dive-with-us",
                     element: <DiveWithUs />
+                },
+                {
+                    path: "Events-Details",
+                    element: <EventsDetail />
                 }
             ]
         }

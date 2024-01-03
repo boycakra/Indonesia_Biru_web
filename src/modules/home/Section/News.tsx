@@ -14,6 +14,7 @@ import imgNews9 from "../../../assets/images/news9.png";
 import imgNews10 from "../../../assets/images/large_acara.png";
 import imgNews11 from "../../../assets/images/bocil.1.png";
 import imgNews12 from "../../../assets/images/large_nomenie.png";
+import imgNews13 from "../../../assets/images/new13.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -34,7 +35,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 9 && nextSlide === 10) {
+            if (currentSlide === 10 && nextSlide === 11) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -96,6 +97,25 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-13"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews13}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">A Year of Gratitude and Progress: A Message from IBF Founder, Andresa Putra</div>
+                                <div className="content-date-restoration">Desember 31, 2023</div>
+                                <div className="content-desc-restoration">
+                                    As we bid farewell to 2023, I want to express my deepest gratitude to each one of you for your unwavering support of our organization. This past year has been a remarkable journey of progress and learning, and it's with immense pride that I share some key highlights of our collective achievements.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+
                 <div className="carousel-slide">
                         <Link to={"/detail-news-12"}>
                             <div className="container-content-restoration">

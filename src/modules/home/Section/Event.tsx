@@ -1,5 +1,6 @@
 import React from 'react';
 import img1 from '../../../assets/images/Event_oc.jpeg';
+import { Link } from 'react-router-dom';
 
 const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);
@@ -19,19 +20,20 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
                         IBF Event
                     </div>
                     <div className="desc-event">
-                    Get yourself down to Gili Asahan 20th & 21st January to take part in Crafting Coral for the Coral Connect event - Organised by 
-                    <a href="https://www.instagram.com/indonesiabirufoundation/?g=5/" target="_blank"> @indonesiabirufoundation</a>, 
-                    <a href="https://www.instagram.com/pearlbeachresortgiliasahan/" target="_blank">@pearlbeachresortgiliasahan</a>, 
-                    <a href="https://www.instagram.com/oceanwaydive/" target="_blank">@oceanwaydive </a>
-                    Registration will take place on site during the event; 150k to take part in the ceramic workshop & 200k for both the ceramic and plantation dive.
+                    Get yourself down to Gili Asahan on 20th & 21st January to take part in Crafting Coral for the Coral Connect event - Organized by 
+                    <a href="https://www.instagram.com/indonesiabirufoundation/?g=5/" target="_blank" rel="noopener noreferrer">@indonesiabirufoundation</a>, 
+                    <a href="https://www.instagram.com/pearlbeachresortgiliasahan/" target="_blank" rel="noopener noreferrer">@pearlbeachresortgiliasahan</a>, 
+                    <a href="https://www.instagram.com/oceanwaydive/" target="_blank" rel="noopener noreferrer">@oceanwaydive</a>. 
+                    Registration will take place on-site during the event; 150k to take part in the ceramic workshop & 200k for both the ceramic and plantation dive.
+
 
                     </div>
                     <div className="container-btn-event">
-                        <a href='https://www.instagram.com/p/C0OUFHjvW_l/' target="_blank" rel="noopener noreferrer">
+                        <Link to={"/Events-Details"}>
                             <button className="btn-event">
                                 Event
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                
