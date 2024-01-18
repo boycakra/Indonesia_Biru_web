@@ -51,9 +51,18 @@ export default function Header() {
   const { updateValue } = useMyContext();
 
   const handleClick = (value: string) => {
-    updateValue(value);
     setIsOpen(false);
-  }
+    if (value === "Event") {
+      // If it's the "Event" link, navigate to the event route first
+      updateValue(value);
+    } else {
+      // For other links, update the context value and navigate
+      updateValue(value);
+      // Optionally, you can navigate to the corresponding route here
+      // Example:
+      // history.push(`/${value.toLowerCase()}`);
+    }
+  };
   return (
     <header>
       <nav className="navbar">
@@ -93,7 +102,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to={"/"} onClick={() => updateValue("Event")}>
+              <Link to={"/"} onClick={() => handleClick("Event")}>
                 Event
               </Link>
             </li>

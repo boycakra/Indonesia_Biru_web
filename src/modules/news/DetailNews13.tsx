@@ -32,7 +32,7 @@ const DetailNews5 = () => {
             {/* Title and Date */}
             <div className="container-title-detail-news">
                 <div className="title-detail-news">
-                    A Year of Gratitude and Milestones: Insights from IBF Founder and Director, Andresa Putra
+                    A Year of Gratitude and Milestones: Insights from IBF Founder and Director, Andre Saputra
                 </div>
                 <div className="date-detail-news">Boy Cakraningrat • December 30, 2023</div>
             </div>
@@ -41,7 +41,7 @@ const DetailNews5 = () => {
             <div className="container-desc-detail-news">
                 <div className="desc-detail-news">
                     <p>
-                        As we bid farewell to 2023, IBF Founder and Director, Andresa Putra, has a few words to express
+                        As we bid farewell to 2023, IBF Founder and Director, Andre Saputra, has a few words to express
                         his deepest gratitude to each one of you for your unwavering support of our organization.
                         This past year has been a remarkable journey of progress and learning, and it's with immense
                         pride that he shares some key highlights of our collective achievements.

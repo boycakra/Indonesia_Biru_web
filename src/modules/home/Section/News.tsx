@@ -15,6 +15,8 @@ import imgNews10 from "../../../assets/images/large_acara.png";
 import imgNews11 from "../../../assets/images/bocil.1.png";
 import imgNews12 from "../../../assets/images/large_nomenie.png";
 import imgNews13 from "../../../assets/images/new13.png";
+import imgNews14 from "../../../assets/images/small_Shore.png";
+import imgNews15 from "../../../assets/images/Event_21.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -35,7 +37,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 10 && nextSlide === 11) {
+            if (currentSlide === 12 && nextSlide === 13) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -97,6 +99,43 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-15"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews15}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">Coral Connect: Uniting Minds and Reefs for a Sustainable Tomorrow</div>
+                                <div className="content-date-restoration">January 18, 2024</div>
+                                <div className="content-desc-restoration">
+                                    During the upcoming "Coral Connect: Connecting Minds and Reefs for a Better Future Event," scheduled for January 21st, a special sharing session is set to take place. This session will feature the active participation of esteemed organizations such as @livingseas.foundation, @indonesiabirufoundation, @pepsuwpics, and @seachangeindonesia.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-14"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews14}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">IBF Takes Stand Against Surging Plastic Pollution Crisis</div>
+                                <div className="content-date-restoration">January 15, 2024</div>
+                                <div className="content-desc-restoration">
+                                The UN's recent report on plastic pollution signals a dire future, projecting a doubling of plastic waste by 2030.
+                        In response, the Indonesia Biru Foundation (IBF) emphasizes the critical need for immediate action and collective
+                        efforts to combat this escalating crisis. </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-13"}>
                             <div className="container-content-restoration">
