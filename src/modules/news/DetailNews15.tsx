@@ -51,7 +51,7 @@ const CoralConnectEvent = () => {
                 <div className="title-detail-news">
                     Coral Connect: Uniting Minds and Reefs for a Sustainable Tomorrow
                 </div>
-                <div className="date-detail-news">January 21, 2024</div>
+                <div className="date-detail-news">January 18, 2024</div>
             </div>
 
             <div className="container-desc-detail-news">
