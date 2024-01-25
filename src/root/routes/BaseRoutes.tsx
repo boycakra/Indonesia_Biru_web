@@ -23,6 +23,7 @@ import DetailNews12 from '../../modules/news/DetailNews12';
 import DetailNews13 from '../../modules/news/DetailNews13';
 import DetailNews14 from '../../modules/news/DetailNews14';
 import DetailNews15 from '../../modules/news/DetailNews15';
+import DetailNews16 from '../../modules/news/DetailNews16';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -99,6 +100,10 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news-15",
                     element: <DetailNews15 />
+                },
+                {
+                    path: "detail-news-16",
+                    element: <DetailNews16 />
                 },
                 {
                     path: "dive-with-us",

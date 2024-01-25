@@ -17,6 +17,7 @@ import imgNews12 from "../../../assets/images/large_nomenie.png";
 import imgNews13 from "../../../assets/images/new13.png";
 import imgNews14 from "../../../assets/images/small_Shore.png";
 import imgNews15 from "../../../assets/images/Event_21.png";
+import imgNews16 from "../../../assets/gillasahan/gill.jpg";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -37,7 +38,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 12 && nextSlide === 13) {
+            if (currentSlide === 13 && nextSlide === 14) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -99,6 +100,23 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-16"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews16}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">Coral Connect Lombok 2024: A Gathering of Ocean Enthusiasts</div>
+                                <div className="content-date-restoration">January 23, 2024</div>
+                                <div className="content-desc-restoration">
+                                In the vibrant spirit of the ocean, Coral Connect Lombok 2024 concluded with a splash! 🌊 The event kicked off the new year by inviting passionate individuals to the enchanting @coralconnectlombok for two memorable days of connection and collaboration </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-15"}>
                             <div className="container-content-restoration">
