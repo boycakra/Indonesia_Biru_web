@@ -127,7 +127,7 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
                   <div className="button-container">
                     {event.link2 && (
                         <Link to={event.link2}>
-                          <button className="btn-event">EventCoralconnect</button>
+                          <button className="btn-event">Coral connect</button>
                         </Link>
                       )}
                   </div>

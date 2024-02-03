@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import imgDesc4 from '../../assets/gillasahan/gill (3).png';
-import imgDesc5 from '../../assets/gillasahan/gill (5).png';
-import imgDesc6 from '../../assets/gillasahan/gill (6).png';
+import imgDesc1 from '../../assets/corcan/Ccno (1).jpeg';
+import imgDesc2 from '../../assets/corcan/Ccno (2).jpeg';
+import imgDesc4 from '../../assets/corcan/Ccno (3).jpeg';
+import imgDesc5 from '../../assets/corcan/Ccno (4).jpeg';
+import imgDesc6 from '../../assets/corcan/Ccno (5).jpeg';
 
 
 const CoralConnectEvent = () => {
@@ -17,7 +19,7 @@ const CoralConnectEvent = () => {
     }, []);
 
 
-    const imagesSet2 = [imgDesc4, imgDesc5, imgDesc6];
+    const imagesSet2 = [imgDesc5,imgDesc1,imgDesc2, imgDesc4 , imgDesc6];
 
     const sliderSettings = {
         dots: true,
