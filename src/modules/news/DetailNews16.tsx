@@ -48,7 +48,11 @@ const CoralConnectEvent = () => {
                 <Slider {...sliderSettings}>
                     {imagesSet1.map((img, index) => (
                         <div key={index}>
-                            <img src={img} alt={`detail-news-set1-${index}`} className="img-detail-news" />
+                            <img 
+                            src={img} alt={`detail-news-set1-${index}`} className="img-detail-news" 
+                            
+                            />
+                            
                         </div>
                     ))}
                 </Slider>
@@ -90,7 +94,8 @@ const CoralConnectEvent = () => {
                 <Slider {...sliderSettings}>
                     {imagesSet2.map((img, index) => (
                         <div key={index}>
-                            <img src={img} alt={`detail-news-set2-${index}`} className="img-detail-news" />
+                            <img src={img} alt={`detail-news-set2-${index}`} className="img-detail-news" 
+                            style={{ width: '50%', height: '50%', display: 'block', margin: '0 auto' }}/>
                         </div>
                     ))}
                 </Slider>

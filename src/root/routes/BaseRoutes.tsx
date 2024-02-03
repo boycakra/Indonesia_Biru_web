@@ -8,6 +8,7 @@ import {
 import Home from '../../modules/home';
 import DetailNews from '../../modules/news/DetailNews';
 import EventsDetail from '../../modules/Events/EventsDetails';
+import EventsCoralconnect from '../../modules/Events/EventsCoralconnect';
 import DetailNews1 from '../../modules/news/DetailNews1';
 import DetailNews2 from '../../modules/news/DetailNews2';
 import DetailNews3 from '../../modules/news/DetailNews3';
@@ -112,6 +113,10 @@ export default function BaseRoutes() {
                 {
                     path: "Events-Details",
                     element: <EventsDetail />
+                },
+                {
+                    path: "EventsCoralconnect",
+                    element: <EventsCoralconnect />
                 }
             ]
         }

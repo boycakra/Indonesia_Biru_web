@@ -1475,6 +1475,13 @@ header {
 
 /* Event Style Container */
 /* Event Style Container */
+
+.container-bigevent {
+  border-top: 1px solid var(--neutral-100, #DEE4E8);
+  background: var(--background-grey, #F4F7F9);
+  padding: 40px 16px;
+}
+
 .container-event {
   padding: 40px 16px;
   display: grid;
@@ -1517,9 +1524,15 @@ header {
   text-align: justify;
 }
 
+.button-container {
+  
+  margin-bottom: 20px; /* Add margin below the button-container */
+}
+
 .container-btn-event {
   display: none;
 }
+
 
 .content-our-event {
   /* Updated class name */

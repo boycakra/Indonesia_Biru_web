@@ -30,6 +30,7 @@ const eventsData = [
         </>
       ),
       link: '/Events-Details',
+      link2: '/EventsCoralconnect',
       imageUrl: img1,
     },
     {
@@ -101,8 +102,9 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
     }
   };
 
+  
   return (
-    <div className="container-news" ref={ref}>
+    <div className=".container-bigevent" ref={ref}>
       <div className="container-title-news">
         
         <Slider {...eventSettings} ref={(slider) => (sliderRef.current = slider)}>
@@ -116,9 +118,19 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
                   <div className="title-event">{event.title} <br /></div>
                   <div className="title-event-mobile">{event.title}</div>
                   <div className="desc-event">{event.description}</div>
-                  <Link to={event.link}>
-                    <button className="btn-event">Event</button>
-                  </Link>
+                  <div className="button-container">
+                    <Link to={event.link}>
+                      <button className="btn-event">Event</button>
+                    </Link>
+                   
+                  </div>
+                  <div className="button-container">
+                    {event.link2 && (
+                        <Link to={event.link2}>
+                          <button className="btn-event">EventCoralconnect</button>
+                        </Link>
+                      )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,12 +138,15 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
         </Slider>
       </div>
       <div className="container-btn-carousel-news">
+        <div>
           <button
             className={`btn-slider ${isFirstEventSlide ? 'disabled-btn' : ''}`}
             onClick={() => goToEventSlide(eventSettings.slidesToShow - 1)}
           >
             <img src={arrowLeft} alt="arrow-left" />
           </button>
+        </div>
+        <div>
           <button
             className={`btn-slider ${isLastEventSlide ? 'disabled-btn' : ''}`}
             onClick={() => goToEventSlide(eventSettings.slidesToShow + 1)}
@@ -139,6 +154,7 @@ const Event = React.forwardRef<HTMLDivElement>((props, ref) => {
             <img src={arrowRight} alt="arrow-right" />
           </button>
         </div>
+      </div>
     </div>
   );
 });
