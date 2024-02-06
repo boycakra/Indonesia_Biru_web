@@ -18,6 +18,7 @@ import imgNews13 from "../../../assets/images/new13.png";
 import imgNews14 from "../../../assets/images/small_Shore.png";
 import imgNews15 from "../../../assets/images/Event_21.png";
 import imgNews16 from "../../../assets/gillasahan/gill.jpg";
+import imgNews17 from "../../../assets/images/mangrove.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -38,7 +39,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 13 && nextSlide === 14) {
+            if (currentSlide === 14 && nextSlide === 15) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -100,6 +101,23 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-17"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews17}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">IBF Plants Mangroves</div>
+                                <div className="content-date-restoration">February 03, 2024</div>
+                                <div className="content-desc-restoration">
+                                As we kick off the new week, Indonesia Biru Foundation (IBF) embarked on a meaningful mangrove planting initiative in collaboration with @cemare_ecogreen. It was a day filled with purpose, teamwork, and a commitment to our precious marine ecosystems. </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-16"}>
                             <div className="container-content-restoration">
