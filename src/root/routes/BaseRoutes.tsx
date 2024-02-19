@@ -26,6 +26,8 @@ import DetailNews14 from '../../modules/news/DetailNews14';
 import DetailNews15 from '../../modules/news/DetailNews15';
 import DetailNews16 from '../../modules/news/DetailNews16';
 import DetailNews17 from '../../modules/news/DetailNews17';
+import DetailNews18 from '../../modules/news/DetailNews18';
+import DetailNews19 from '../../modules/news/DetailNews19';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -110,6 +112,14 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news-17",
                     element: <DetailNews17 />
+                },
+                {
+                    path: "detail-news-18",
+                    element: <DetailNews18 />
+                },
+                {
+                    path: "detail-news-19",
+                    element: <DetailNews19 />
                 },
                 {
                     path: "dive-with-us",

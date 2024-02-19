@@ -19,14 +19,7 @@ const Mangrovenews17 = () => {
                 </Link>{' '}
                 / <span>IBF Plants Mangroves</span>
             </div>
-            <div className="container-title-detail-news">
-                <div className="title-detail-news">
-                    IBF PLANTS MANGROVES IN COLLABORATION WITH @CEMARE_ECOGREEN
-                </div>
-                <div className="date-detail-news">
-                    Boy Cakraningrat • February 03, 2024
-                </div>
-            </div>
+            
             <div className="container-embed-youtube">
                 <iframe
                     title="YouTube Video"
@@ -34,6 +27,14 @@ const Mangrovenews17 = () => {
                     frameBorder="0"
                     allowFullScreen
                 />
+            </div>
+            <div className="container-title-detail-news">
+                <div className="title-detail-news">
+                    IBF PLANTS MANGROVES IN COLLABORATION WITH @CEMARE_ECOGREEN
+                </div>
+                <div className="date-detail-news">
+                    Boy Cakraningrat • February 03, 2024
+                </div>
             </div>
             <div className="container-desc-detail-news">
             <div className="article-container">

@@ -19,6 +19,8 @@ import imgNews14 from "../../../assets/images/small_Shore.png";
 import imgNews15 from "../../../assets/images/Event_21.png";
 import imgNews16 from "../../../assets/gillasahan/gill.jpg";
 import imgNews17 from "../../../assets/images/mangrove.png";
+import imgNews18 from "../../../assets/images/Indonesia biru_imlek.jpg";
+import imgNews19 from "../../../assets/images/Collecting_with_kids.jpg";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -39,7 +41,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 14 && nextSlide === 15) {
+            if (currentSlide === 16 && nextSlide === 17) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -101,6 +103,42 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-19"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews19}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">Collaborative Art Project with Elemetry School in Lombok</div>
+                                <div className="content-date-restoration">February 18 , 2024</div>
+                                <div className="content-desc-restoration">
+                                Today marks an exciting milestone as Indonesia Biru Foundation (IBF) joins hands with Elemetry School in Lombok for a collaborative art project aimed at cleaning up our coastlines. With the support of @infosd.lombokinsanischool, we are embarking on a mission to collect rubbish and transform it into meaningful works of art.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-18"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews18}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">Welcoming the Year of the Dragon with Indonesia Biru Foundation</div>
+                                <div className="content-date-restoration">February 11, 2024</div>
+                                <div className="content-desc-restoration">
+                                As we usher in the Year of the Dragon, Indonesia Biru Foundation (IBF) extends warm wishes to all our supporters and partners, especially on this auspicious occasion of Chinese New Year. The Year of the Dragon symbolizes strength, leadership, and determination – qualities that resonate deeply with our mission to empower coastal communities and enhance ocean literacy among Indonesians.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-17"}>
                             <div className="container-content-restoration">
