@@ -7,9 +7,73 @@ import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
 import img1 from '../../../assets/images/Event_oc.jpeg';
-import img2 from '../../../assets/images/Event_Rescedule.jpeg';
+import img2 from '../../../assets/images/Turtle.jpeg';
+import img3 from '../../../assets/images/New_event_Oceanday.jpg';
 
 const eventsData = [
+  {
+  title: 'World Ocean Day Celebration',
+  description: (
+    <>
+        Join us at Coral Lab in Kecinan Bay for World Ocean Day! Organized by the Indonesia Biru Foundation, this event offers a unique opportunity to learn about and participate in coral restoration.
+        <br />
+        <br />
+        <strong>Event Highlights:</strong>
+        <br />
+        <ul>
+            <li><strong>Coral Restoration Activity:</strong> Help restore coral reefs.</li>
+            <li><strong>Workshop:</strong> Learn coral conservation techniques.</li>
+            <li><strong>Lab Tour:</strong> Explore our Coral Lab.</li>
+            <li><strong>Restoration Sites:</strong> Visit active restoration areas.</li>
+            <li><strong>Snacks and Refreshments:</strong> Water and snacks included.</li>
+        </ul>
+        <br />
+        <strong>Cost:</strong> IDR 150,000 (30% discount for Lombok residents with proof of KTP).
+        <br />
+        <br />
+        <strong>Register and Book Your Spot Now!</strong>
+        <br />
+        Contact Putri at +6285737476658.
+        <br />
+        <br />
+        Perfect for local communities, tourists, kids, environmental enthusiasts, and families. Don’t miss this chance to contribute to marine conservation!
+        <br />
+        <br />
+        <strong>Link:</strong> <a href="https://www.instagram.com/indonesiabirufoundation/?g=5">Follow us on Instagram for more updates!</a>
+        <br />
+        <br />
+            Join us and make a difference! 🌊🐠🌿
+        </>
+    ),
+      link: 'https://www.instagram.com/indonesiabirufoundation/?g=5',
+      imageUrl: img3,
+
+    },
+  { 
+  title: 'World Turtle Day',
+  description: (
+      <>
+          <strong>🗓 Date:</strong> Thursday, 23 May 2024
+          <br />
+          <strong>🕒 Time:</strong> 3pm to 5pm
+          <br />
+          <br />
+          Join us for World Turtle Day, organized by the Indonesia Biru Foundation. Learn about sea turtle conservation and the proper procedures for their release. This event aims to:
+          <br />
+          <br />
+          <ul>
+              <li>Raise awareness about sea turtle conservation</li>
+              <li>Educate participants on the importance of protecting sea turtles and their habitats</li>
+              <li>Engage the community in environmental stewardship</li>
+              <li>Contribute to the preservation of sea turtle populations</li>
+          </ul>
+          <br />
+          Suitable for local communities, tourists, kids, environmental enthusiasts, and families. Don't miss out on this opportunity to make a difference!
+      </>
+  ),
+  link: '/detail-news-25',
+  imageUrl: img2,
+},
     {
       title: 'IBF Event',
       description: (
@@ -33,37 +97,8 @@ const eventsData = [
       link2: '/EventsCoralconnect',
       imageUrl: img1,
     },
-    {
-      title: 'FERG Weekly Discussion Forum #27',
-      description: (
-        <>
-          FERG Geosains Indonesia and Ikatan Ahli Geologi Indonesia (IAGI) Jawa Barat & Banten invite you to join the discussion with:
+   
   
-          <br />
-          <strong>Title : Marine Scientist and Founder of Indonesia Biru Foundation</strong>
-  
-          <br />
-          <br />
-          <strong>Topic:</strong> CORAL RESTORATION: Science and Best Practice
-  
-          <br />
-          <br />
-          <strong>🗓 Date:</strong> Wednesday, 18 January 2024
-          <br />
-          <strong>🕣 Time:</strong> 19.30 - 21.00 WIB
-  
-          <br />
-          <br />
-          <strong>🔗 Google Meet Link:</strong> bit.ly/FWD_FORUM
-  
-          <br />
-          <br />
-          <strong>Supported by:</strong> Ikatan Ahli Geologi Indonesia (IAGI) and Dongeng Geologi
-        </>
-      ),
-      link: 'bit.ly/FWD_FORUM',
-      imageUrl: img2,
-    },
   // Add more events as needed
 ];
 

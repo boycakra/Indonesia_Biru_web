@@ -21,6 +21,14 @@ import imgNews16 from "../../../assets/gillasahan/gill.jpg";
 import imgNews17 from "../../../assets/images/mangrove.png";
 import imgNews18 from "../../../assets/images/Indonesia biru_imlek.jpg";
 import imgNews19 from "../../../assets/images/Collecting_with_kids.jpg";
+import imgNews20 from "../../../assets/images/global.jpg";
+import imgNews21 from "../../../assets/images/laut-plastik.png";
+import imgNews22 from "../../../assets/images/price.png";
+import imgNews23 from "../../../assets/images/Mangrove.jpeg";
+import imgNews24 from "../../../assets/images/Cita Buana.jpeg";
+import imgNews25 from "../../../assets/images/Sanur kolab Hyatt (3).jpeg";
+import imgNews26 from "../../../assets/images/mafff1 (1).jpeg";
+import imgNews27 from "../../../assets/images/biofarma (3).jpeg";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -41,7 +49,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 16 && nextSlide === 17) {
+            if (currentSlide === 25 && nextSlide === 26) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -103,6 +111,151 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-27"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews27}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Biofarma and Indonesia Biru Foundation Collaboration</div>
+                                <div className="content-date-restoration">July 31, 2024</div>
+                                <div className="content-desc-restoration">
+                                Indonesia Biru Foundation, in collaboration with Biofarma, Seachange Indonesia, and Oceanway Dive, proudly announces a significant reef restoration project in Gili Asahan. This project has reached a major milestone with the planting of over 1000 new coral fragments at depths of 8-13 meters.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-26"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews26}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Using Cycling for Marine Conservation Campaigns</div>
+                                <div className="content-date-restoration">July 28, 2024</div>
+                                <div className="content-desc-restoration">
+                                Who would've thought cyclist and marine conservation is a match? We proved it right in Bandung! 🌊"
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-25"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews25}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> World Turtle Day: A Successful Event for Conservation Awareness</div>
+                                <div className="content-date-restoration">May 24, 2024</div>
+                                <div className="content-desc-restoration">
+                                On Thursday, May 23, 2024, the Indonesia Biru Foundation proudly hosted World Turtle Day, a highly successful event dedicated to raising awareness about sea turtle conservation. The event took place from 3pm to 5pm, drawing an enthusiastic crowd of local communities, tourists, children, environmental enthusiasts, and families.🌏♻️
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-24"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews23}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Successful Mangrove Restoration Event</div>
+                                <div className="content-date-restoration">April 28, 2023</div>
+                                <div className="content-desc-restoration">
+                                We have some exciting news to share with you! @coralreefcare, Indonesia Biru Foundation, and @cemare_ecogreen are teaming up to conduct a new mission in Cemare, South Lembar 🌱. We'll be working on mangrove restoration, waste management, and environmental education, all with the aim of maintaining the balance of nature and ensuring sustainable benefits for all🌏♻️
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-23"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews24}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Explore, Learn, and Protect: Inviting Schools to Indonesia Biru Foundation</div>
+                                <div className="content-date-restoration">April 18, 2023</div>
+                                <div className="content-desc-restoration">
+                                Calling all educators and young minds! Indonesia Biru Foundation is thrilled to announce that our doors are open for school visits. Embark on an educational journey like no other as we invite students to immerse themselves in the wonders of the environment, coral reefs, and conservation through an engaging hands-on experience.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-22"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews22}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Sea Level Rise: Understanding the Impacts and Solutions</div>
+                                <div className="content-date-restoration">February 26 , 2024</div>
+                                <div className="content-desc-restoration">
+                                Studies cited in the article attribute sea level rise to various factors, including melting ice sheets, thermal expansion of seawater, and changes in ocean circulation patterns. These processes contribute to the increasing frequency and severity of flooding, erosion, and storm surges along coastlines worldwide.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-21"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews21}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">Study Finds, Plastic Pollution Worsens Ocean Acidification</div>
+                                <div className="content-date-restoration">February 25 , 2024</div>
+                                <div className="content-desc-restoration">
+                                Plastic pollution continues to pose a significant threat to marine ecosystems, with far-reaching consequences for ocean health. A recent study highlighted in a <a href="https://phys.org/news/2022-09-plastic-degradation-ocean-contributes-acidification.html" target="_blank" rel="noopener noreferrer">Phys.org article</a> reveals that plastic degradation in the ocean exacerbates ocean acidification, compounding the challenges faced by marine life.
+                    
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-20"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews20}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">The Arrival of the Worst Heatwave: A Call to Action for Reef Conservation</div>
+                                <div className="content-date-restoration">February 24 , 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger! 🌊.  It's time to pay close attention to our reefs as we brace ourselves for the arrival of the worst heatwave expected this March-April. The impending heatwave poses a significant threat to our marine ecosystems, particularly coral reefs, which are highly sensitive to changes in temperature.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-19"}>
                             <div className="container-content-restoration">

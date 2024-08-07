@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../../assets/images/ourMission1.png';
-import img2 from '../../../assets/images/ourMission2.png';
-import img3 from '../../../assets/images/ourMission3.png';
+import img1 from '../../../assets/images/new_misson (2).jpeg';
+import img2 from '../../../assets/images/new_misson (1).jpeg';
+import img3 from '../../../assets/images/new_misson (3).jpeg';
 
 const OurMission = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);

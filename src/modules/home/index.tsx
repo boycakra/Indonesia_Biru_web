@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { useMyContext } from '../../context/SectionProvider';
 
-import arrow from '../../assets/icons/Arrow-down.svg'
+import arrow from '../../assets/icons/Arrow-down.svg';
 import OurMission from './Section/OurMission';
 import Event from './Section/Event';
 import Restoration from './Section/Restoration';
 import Coral from './Section/Coral';
 import Dive from './Section/Dive';
+import Voluteering from './Section/Voluteering'; // Add this import
 import Team from './Section/Team';
 import Gallery from './Section/Gallerty';
 import Merchandise from './Section/Merchandise';
@@ -18,6 +19,7 @@ const Home = () => {
     const missionRef = useRef<HTMLDivElement>(null);
     const coralRef = useRef<HTMLDivElement>(null);
     const teamRef = useRef<HTMLDivElement>(null);
+    const voluteeringRef = useRef<HTMLDivElement>(null); // Fix typo here
     const galleryRef = useRef<HTMLDivElement>(null);
     const merchandiseRef = useRef<HTMLDivElement>(null);
     const newsRef = useRef<HTMLDivElement>(null);
@@ -34,6 +36,9 @@ const Home = () => {
         }
         if (value === "team" && teamRef.current) {
             teamRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        if (value === "voluteering" && voluteeringRef.current) { // Fix typo here
+            voluteeringRef.current.scrollIntoView({ behavior: 'smooth' });
         }
         if (value === "gallery" && galleryRef.current) {
             galleryRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -52,13 +57,13 @@ const Home = () => {
                 top: 0,
             });
         }
-    }, [value])
+    }, [value]);
 
     const handleClick = () => {
         if (missionRef.current) {
             missionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
-    }
+    };
 
     return (
         <>
@@ -205,6 +210,7 @@ const Home = () => {
             <Coral ref={coralRef} />
             <Dive />
             <Team ref={teamRef} />
+            <Voluteering ref={voluteeringRef} /> {/* Add this line */}
             <Gallery ref={galleryRef} />
             <Merchandise ref={merchandiseRef} />
             <News ref={newsRef} />
@@ -215,7 +221,7 @@ const Home = () => {
                 <iframe src="https://restor.eco/embed/site/77e8a43f-0798-4347-8c7a-794f1c9211e3/" title="Kecinan Bay" width="100%" height="648"></iframe>
             </div>
         </>
-    )
+    );
 }
 
 export default Home;

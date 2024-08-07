@@ -3,21 +3,26 @@ import Slider from 'react-slick';
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 import { useRef, useState } from 'react';
-import imgGallery1 from '../../../assets/images/awal (2).png';
-import imgGallery2 from '../../../assets/images/awal (3).png';
-import imgGallery3 from '../../../assets/images/baru (2).png';
-import imgGallery4 from '../../../assets/images/baru (3).png';
-import imgGallery5 from '../../../assets/images/baru (4).png';
-import imgGallery6 from '../../../assets/images/awal (5).png';
-import imgGallery7 from '../../../assets/images/awal (6).png';
-import imgGallery8 from '../../../assets/images/baru (13).png';
-import imgGallery9 from '../../../assets/images/baru (16).png';
-import imgGallery10 from '../../../assets/images/baru (20).png';
-import imgGallery11 from '../../../assets/images/new (2).png';
-import imgGallery12 from '../../../assets/images/awar (4).png';
-import imgGallery13 from '../../../assets/images/baru (12).png';
-import imgGallery14 from '../../../assets/images/test2.png';
-import imgGallery15 from '../../../assets/images/baru (25).png';
+import imgGallery1 from '../../../assets/images/gal1 selam (1).jpeg';
+import imgGallery2 from '../../../assets/images/gal1 selam (2).jpeg';
+import imgGallery3 from '../../../assets/images/gal1 selam (3).jpeg';
+import imgGallery4 from '../../../assets/images/gal1 selam (4).jpeg';
+import imgGallery5 from '../../../assets/images/gal1 selam (5).jpeg';
+import imgGallery6 from '../../../assets/images/gal 2 com (5).jpeg';
+import imgGallery7 from '../../../assets/images/gal 2 com (2).jpeg';
+import imgGallery8 from '../../../assets/images/gal 2 com (3).jpeg';
+import imgGallery9 from '../../../assets/images/gal 2 com (4).jpeg';
+import imgGallery10 from '../../../assets/images/gal 2 com (1).jpeg';
+import imgGallery11 from '../../../assets/images/kidsgal3 (1).jpeg';
+import imgGallery12 from '../../../assets/images/kidsgal3 (2).jpeg';
+import imgGallery13 from '../../../assets/images/kidsgal3 (3).jpeg';
+import imgGallery14 from '../../../assets/images/kidsgal3 (4).jpeg';
+import imgGallery15 from '../../../assets/images/kidsgal3 (5).jpeg';
+import imgGallery16 from '../../../assets/images/gal4 clean (1).jpeg';
+import imgGallery17 from '../../../assets/images/gal4 clean (2).jpeg';
+import imgGallery18 from '../../../assets/images/gal4 clean (3.1).jpeg';
+import imgGallery19 from '../../../assets/images/gal4 clean (5).jpeg';
+import imgGallery20 from '../../../assets/images/gal4 clean (4).jpeg';
 
 
 const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
@@ -33,7 +38,7 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
-            if (currentSlide === 1 && nextSlide === 2) {
+            if (currentSlide === 2 && nextSlide === 3) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -103,6 +108,17 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                             <img src={imgGallery13} alt="gallery" className="img-gallery" />
                             <img src={imgGallery14} alt="gallery" className="img-gallery" />
                             <img src={imgGallery15} alt="gallery" className="img-gallery" />
+                        </div>
+                    </div>
+                    <div className="container-gallerty-slide">
+                        <div className="container-gallery-row-1">
+                            <img src={imgGallery16} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery17} alt="gallery" className="img-gallery" />
+                        </div>
+                        <div className="container-gallery-row-2">
+                            <img src={imgGallery18} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery19} alt="gallery" className="img-gallery" />
+                            <img src={imgGallery20} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
                 </Slider>

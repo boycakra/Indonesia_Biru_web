@@ -28,6 +28,14 @@ import DetailNews16 from '../../modules/news/DetailNews16';
 import DetailNews17 from '../../modules/news/DetailNews17';
 import DetailNews18 from '../../modules/news/DetailNews18';
 import DetailNews19 from '../../modules/news/DetailNews19';
+import DetailNews20 from '../../modules/news/DetailNews20';
+import DetailNews21 from '../../modules/news/DetailNews21';
+import DetailNews22 from '../../modules/news/DetailNews22';
+import DetailNews23 from '../../modules/news/DetailNews23';
+import DetailNews24 from '../../modules/news/DetailNews24';
+import DetailNews25 from '../../modules/news/DetailNews25';
+import DetailNews26 from '../../modules/news/DetailNews26';
+import DetailNews27 from '../../modules/news/DetailNews27';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -120,6 +128,38 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news-19",
                     element: <DetailNews19 />
+                },
+                {
+                    path: "detail-news-20",
+                    element: <DetailNews20 />
+                },
+                {
+                    path: "detail-news-21",
+                    element: <DetailNews21 />
+                },
+                {
+                    path: "detail-news-22",
+                    element: <DetailNews22 />
+                },
+                {
+                    path: "detail-news-23",
+                    element: <DetailNews23 />
+                },
+                {
+                    path: "detail-news-24",
+                    element: <DetailNews24 />
+                },
+                {
+                    path: "detail-news-25",
+                    element: <DetailNews25 />
+                },
+                {
+                    path: "detail-news-26",
+                    element: <DetailNews26 />
+                },
+                {
+                    path: "detail-news-27",
+                    element: <DetailNews27 />
                 },
                 {
                     path: "dive-with-us",
