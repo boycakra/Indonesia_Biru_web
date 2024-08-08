@@ -9,8 +9,29 @@ import arrowRight from '../../../assets/icons/Arrow-right.svg';
 import img1 from '../../../assets/images/Event_oc.jpeg';
 import img2 from '../../../assets/images/Turtle.jpeg';
 import img3 from '../../../assets/images/New_event_Oceanday.jpg';
+import newevent from '../../../assets/images/New_event.jpeg';
 
 const eventsData = [
+  {
+    title: 'Indonesia Independence Day',
+    description: (
+      <>
+          Hey Blue Ranger! Independence Day is just 10 days away!  If you're free, come join our fun-filled event starting at 9 AM at Cemare Mangrove, Lembar Selatan.
+          <br />
+          <br />
+          Bring a water bottle and a hat. We'll have awesome Independence Day games with cool prizes!
+          <br />
+          <br />
+          See you there on the 17th!
+          <br />
+          <br />
+          #17an #IndonesianIndependenceDay
+      </>
+    ),
+    link: 'https://www.instagram.com/p/C-W0c17vvgE/',
+    imageUrl: newevent,
+},
+
   {
   title: 'World Ocean Day Celebration',
   description: (

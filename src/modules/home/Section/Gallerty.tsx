@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
-import { useRef, useState } from 'react';
+import imgGallerynew1 from '../../../assets/images/newglar1 (2).jpeg';
+import imgGallerynew2 from '../../../assets/images/newglar1 (3).jpeg';
+import imgGallerynew3 from '../../../assets/images/newglar1 (1).jpeg';
+import imgGallerynew4 from '../../../assets/images/newglar1 (4).jpeg';
+import imgGallerynew5 from '../../../assets/images/newglar1 (5).jpeg';
 import imgGallery1 from '../../../assets/images/gal1 selam (1).jpeg';
 import imgGallery2 from '../../../assets/images/gal1 selam (2).jpeg';
 import imgGallery3 from '../../../assets/images/gal1 selam (3).jpeg';
@@ -23,7 +27,6 @@ import imgGallery17 from '../../../assets/images/gal4 clean (2).jpeg';
 import imgGallery18 from '../../../assets/images/gal4 clean (3.1).jpeg';
 import imgGallery19 from '../../../assets/images/gal4 clean (5).jpeg';
 import imgGallery20 from '../../../assets/images/gal4 clean (4).jpeg';
-
 
 const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
     console.log(props);
@@ -56,6 +59,7 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
         sliderRef.current?.slickNext();
         setIsFirstSlide(false);
     };
+
     return (
         <div className="container-gallery" ref={ref}>
             <div className="container-title-gallery">
@@ -76,8 +80,20 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                 </div>
             </div>
             <div className="carousel-container">
-                <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
-                    <div className="container-gallerty-slide">
+                <Slider ref={sliderRef} {...settings}>
+                <div className="container-gallery-slide">
+                        <div className="container-gallery-row-1">
+                            <img src={imgGallerynew1} alt="gallery" className="img-gallery" />
+                            <img src={imgGallerynew2} alt="gallery" className="img-gallery" />
+                        </div>
+                        <div className="container-gallery-row-2">
+                            <img src={imgGallerynew3} alt="gallery" className="img-gallery" />
+                            <img src={imgGallerynew4} alt="gallery" className="img-gallery" />
+                            <img src={imgGallerynew5} alt="gallery" className="img-gallery" />
+                        </div>
+                    </div>
+                    
+                    <div className="container-gallery-slide">
                         <div className="container-gallery-row-1">
                             <img src={imgGallery1} alt="gallery" className="img-gallery" />
                             <img src={imgGallery2} alt="gallery" className="img-gallery" />
@@ -88,7 +104,8 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                             <img src={imgGallery5} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
-                    <div className="container-gallerty-slide">
+                    
+                    <div className="container-gallery-slide">
                         <div className="container-gallery-row-1">
                             <img src={imgGallery6} alt="gallery" className="img-gallery" />
                             <img src={imgGallery7} alt="gallery" className="img-gallery" />
@@ -99,7 +116,7 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                             <img src={imgGallery10} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
-                    <div className="container-gallerty-slide">
+                    <div className="container-gallery-slide">
                         <div className="container-gallery-row-1">
                             <img src={imgGallery11} alt="gallery" className="img-gallery" />
                             <img src={imgGallery12} alt="gallery" className="img-gallery" />
@@ -110,7 +127,7 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                             <img src={imgGallery15} alt="gallery" className="img-gallery" />
                         </div>
                     </div>
-                    <div className="container-gallerty-slide">
+                    <div className="container-gallery-slide">
                         <div className="container-gallery-row-1">
                             <img src={imgGallery16} alt="gallery" className="img-gallery" />
                             <img src={imgGallery17} alt="gallery" className="img-gallery" />
@@ -124,7 +141,7 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
                 </Slider>
             </div>
         </div>
-    )
+    );
 });
 
 export default Gallery;
