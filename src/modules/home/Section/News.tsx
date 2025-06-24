@@ -29,6 +29,22 @@ import imgNews24 from "../../../assets/images/Cita Buana.jpeg";
 import imgNews25 from "../../../assets/images/Sanur kolab Hyatt (3).jpeg";
 import imgNews26 from "../../../assets/images/mafff1 (1).jpeg";
 import imgNews27 from "../../../assets/images/biofarma (3).jpeg";
+import imgNews28 from "../../../assets/images/news_28a.jpeg";
+import imgNews29 from "../../../assets/images/News_29a.jpeg";
+import imgNews30 from "../../../assets/images/news_30a (1).jpg";
+import imgNews31 from "../../../assets/images/news_31a (1).jpg";
+import imgNews32 from "../../../assets/images/bluewater.png";
+import imgNews33 from "../../../assets/images/news_33a.jpg";
+import imgNews34 from "../../../assets/images/news_34a.jpg";
+import imgNews35 from "../../../assets/images/news_35a.jpg";
+import imgNews36 from "../../../assets/images/sd (1).jpg";
+import imgNews37 from "../../../assets/cnewgalry/cnewgalary (23).jpg";
+import imgNews38 from "../../../assets/images/Seven Secrets (4).png";
+import imgNews39 from "../../../assets/images/BMIbaru (5).png";
+import imgNews40 from "../../../assets/images/Events_Fred.png";
+import imgNews41 from "../../../assets/images/merged_image.jpg";
+import imgNews42 from "../../../assets/images/kerang.png";
+import imgNews43 from "../../../assets/biofarmavisit/biofarmavisit.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -49,7 +65,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 25 && nextSlide === 26) {
+            if (currentSlide === 41 && nextSlide === 42) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -111,6 +127,318 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-43"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews43}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Coral Restoration in Gili Asahan with Bio Farma</div>
+                                <div className="content-date-restoration">  June 19, 2025</div>
+                                <div className="content-desc-restoration">
+                                Restoration efforts are breathing new life into Gili Asahan’s reefs, thanks to a collaborative coral restoration program with Bio Farma
+                   
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-42"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews42}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Snorkeling Awareness & Ocean Conservation</div>
+                                <div className="content-date-restoration">  February 22, 2025</div>
+                                <div className="content-desc-restoration">
+                                🌊 Exploring the ocean is a privilege, but with that comes responsibility. As Blue Rangers, let’s ensure we protect marine ecosystems and leave nothing but bubbles behind!
+                   
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-41"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews41}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Mangrove Restoration with BRO Management</div>
+                                <div className="content-date-restoration">  February 17, 2025</div>
+                                <div className="content-desc-restoration">
+                                Mangroves play a crucial role in protecting coastal ecosystems, serving as natural barriers against erosion, storm surges, and even climate change impacts. These incredible trees provide shelter for marine biodiversity and contribute to carbon sequestration, making their restoration more vital than ever. Sadly, mangrove forests are rapidly declining due to deforestation and industrial expansion, leading to severe ecological consequences. Through this initiative, IBF and BRO Management are taking an active step towards reversing the damage and inspiring future generations to do the same. 
+                    
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-40"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews40}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Fun Freediving Events ✨🤩🥳</div>
+                                <div className="content-date-restoration">  February 15, 2025</div>
+                                <div className="content-desc-restoration">
+                                Huge thanks to <a href="https://www.instagram.com/lombokfreedive/" target="_blank" rel="noopener noreferrer">@lombokfreedive</a>, for sharing valuable knowledge with LFC members! We learned so much today! 🎉
+                    
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-39"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews39}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Indonesia Biru Foundation: A Successful Step Towards Mangrove Restoration in Lombok</div>
+                                <div className="content-date-restoration">  January 19, 2025</div>
+                                <div className="content-desc-restoration">
+                                The Indonesia Biru Foundation (IBF), in collaboration with Reef Support, recently concluded a groundbreaking initiative to conserve and revitalize the Cemare Mangrove ecosystem in Lombok. The project, MangroveAI, seamlessly integrated community efforts with advanced technological solutions such as remote sensing and computer vision to enhance ecosystem monitoring and management. The event not only marked a major milestone in environmental restoration but also exemplified how technology and community action can create sustainable change.
+                    
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-38"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews38}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Discover Sustainability at Seven Secrets Resort: A Journey to Protect and Preserve</div>
+                                <div className="content-date-restoration">  January 15, 2025</div>
+                                <div className="content-desc-restoration">
+                                Seven Secrets Resort in Lombok Island-Indonesia is more than a luxury escape. It's a pledge to safeguard our planet, empower communities, and protect the oceans. Nestled in the serene beauty of Nipah Bay, our resort combines world-class amenities and personalized service with meaningful opportunities to contribute to a sustainable future.
+                   
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-36"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews36}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Raising Awareness on Elasmobranchs through Education</div>
+                                <div className="content-date-restoration">  January 13, 2025</div>
+                                <div className="content-desc-restoration">
+                                The Indonesia Biru Foundation has once again taken the lead in environmental education by organizing an engaging and impactful event aimed at raising awareness about elasmobranchs—sharks and rays—among elementary school students. Held as part of the foundation's ongoing marine conservation campaign, this program is designed to instill a sense of wonder, responsibility, and knowledge about these critical species in young learners, emphasizing their ecological importance and unique biology.
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-37"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews37}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Coral Connect 2025: A Successful Collaboration for Coral Reef Restoration</div>
+                                <div className="content-date-restoration">  January 12, 2025</div>
+                                <div className="content-desc-restoration">
+                                The "Coral Connect" event held at Pearl Beach Resort, Gili Asahan, from January 10th to 12th, 2025, was a resounding success, bringing together passionate individuals from the Indonesia Biru Foundation, TU Delft, Seachange Indonesia, and environmental experts worldwide. With a shared commitment to coral reef restoration, the event provided a platform for meaningful discussions on cutting-edge techniques, eco-tourism, and environmental protection. Attendees were inspired by the latest innovations and scientific approaches to preserve coral ecosystems for future generations.
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-35"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews35}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Coastal Ecosystem Conservation 🌊</div>
+                                <div className="content-date-restoration">  October 26, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hello, Blue Rangers! 🌊 We are excited to share our recent participation in an environmental seminar hosted by the Student Council (BEM) of Mataram University. This seminar, held in collaboration with the NTB Department of Marine and Fisheries, brought together experts and advocates to discuss the current state of coastal ecosystems and the vital need for preservation efforts.
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-34"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews34}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  New Awareness Project Survey: Conserving Sharks and Rays for Future Generations 🦈</div>
+                                <div className="content-date-restoration">  October 25, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hello, Blue Rangers! 🌊 We are thrilled to announce a new project in collaboration with Coral Reef Care aimed at increasing awareness of the importance of sharks and rays in marine ecosystems. This one-year project, based in Nusa Tenggara Barat (NTB), is designed to educate and inspire sustainable practices that protect marine life for future generations.
+                    
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-33"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews33}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Weekly Environmental Collaboration with SD Lombok Insani!</div>
+                                <div className="content-date-restoration">  October 23, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hello, Blue Rangers! 🌊 Indonesia Biru Foundation (IBF) is proud to announce our ongoing collaboration with SD Lombok Insani, where we join hands to bring environmental awareness to the next generation. Our weekly sessions are designed to educate students about the importance of preserving coastal ecosystems and the vibrant biodiversity of marine life.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-32"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews32}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Indonesia Biru Foundation Named Finalist in Blue Water Heroes 2024!</div>
+                                <div className="content-date-restoration">  October 11, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger 🌊! We are thrilled to announce that Indonesia Biru Foundation has been selected as a finalist in the <a href="https://bluewateredufest.com/blue-water-heroes/" target="_blank" rel="noopener noreferrer">Blue Water Heroes 2024</a> awards! This remarkable recognition, presented by Blue Water Edufest in collaboration with Tatler Gen.T, celebrates our unwavering commitment to marine conservation.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-31"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews31}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Steady Growth in Coral Conservation: 2022-2024 Milestones</div>
+                                <div className="content-date-restoration">September 31, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger 🌊! Consistency is our guiding star as we continue working for coral reef restoration and marine health. Over the past two years, our conservation projects have slowly but steadily yielded encouraging signs of progress.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-29"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews29}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Coral Restoration with Waste Clay</div>
+                                <div className="content-date-restoration">September 30, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger 🌊! We're thrilled to share the progress of a meaningful collaboration that is now showing tangible results. Not long ago, alongside <a href="https://www.instagram.com/sara__howard/" target="_blank" rel="noopener noreferrer">@sara__howard</a> and <a href="https://www.instagram.com/kevalastudio/" target="_blank" rel="noopener noreferrer">@kevalastudio</a>, we embarked on a small project with a big vision: turning waste clay into a valuable tool for coral restoration. The project’s goal is to help corals attach to barren rock surfaces, which has huge potential for reviving coral ecosystems.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="carousel-slide">
+                        <Link to={"/detail-news-30"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews30}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Youth in Mangrove Conservation</div>
+                                <div className="content-date-restoration">September 29, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger 🌊! We are thrilled to announce our latest collaboration with <a href="https://www.instagram.com/coralreefcare/" target="_blank" rel="noopener noreferrer">@coralreefcare</a> and <a href="https://www.instagram.com/cemare_ecogreen/" target="_blank" rel="noopener noreferrer">@cemare_ecogreen</a>, focusing on a crucial part of coastal resilience — mangrove conservation.
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-28"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews28}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Networking with the World ARC Fleet</div>
+                                <div className="content-date-restoration">September 28, 2024</div>
+                                <div className="content-desc-restoration">
+                                Hi Blue Ranger 🌊! This past week was filled with excitement as we spent time at @medanabaymarina, connecting with the @world_arc_rally fleet ⛵️. As the sailors prepared for their next adventure, we had the perfect opportunity to build meaningful relationships, exchange ideas, and share our passion for marine conservation. 
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-27"}>
                             <div className="container-content-restoration">

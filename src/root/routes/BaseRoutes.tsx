@@ -36,6 +36,22 @@ import DetailNews24 from '../../modules/news/DetailNews24';
 import DetailNews25 from '../../modules/news/DetailNews25';
 import DetailNews26 from '../../modules/news/DetailNews26';
 import DetailNews27 from '../../modules/news/DetailNews27';
+import DetailNews28 from '../../modules/news/DetailNews28';
+import DetailNews29 from '../../modules/news/DetailNews29';
+import DetailNews30 from '../../modules/news/DetailNews30';
+import DetailNews31 from '../../modules/news/DetailNews31';
+import DetailNews32 from '../../modules/news/DetailNews32';
+import DetailNews33 from '../../modules/news/DetailNews33';
+import DetailNews34 from '../../modules/news/DetailNews34';
+import DetailNews35 from '../../modules/news/DetailNews35';
+import DetailNews36 from '../../modules/news/DetailNews36';
+import DetailNews37 from '../../modules/news/DetailNews37';
+import DetailNews38 from '../../modules/news/DetailNews38';
+import DetailNews39 from '../../modules/news/DetailNews39';
+import DetailNews40 from '../../modules/news/DetailNews40';
+import DetailNews41 from '../../modules/news/DetailNews41';
+import DetailNews42 from '../../modules/news/DetailNews42';
+import DetailNews43 from '../../modules/news/DetailNews43';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -160,6 +176,70 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news-27",
                     element: <DetailNews27 />
+                },
+                {
+                    path: "detail-news-28",
+                    element: <DetailNews28 />
+                },
+                {
+                    path: "detail-news-29",
+                    element: <DetailNews29 />
+                },
+                {
+                    path: "detail-news-30",
+                    element: <DetailNews30 />
+                },
+                {
+                    path: "detail-news-31",
+                    element: <DetailNews31 />
+                },
+                {
+                    path: "detail-news-32",
+                    element: <DetailNews32 />
+                },
+                {
+                    path: "detail-news-33",
+                    element: <DetailNews33 />
+                },
+                {
+                    path: "detail-news-34",
+                    element: <DetailNews34 />
+                },
+                {
+                    path: "detail-news-35",
+                    element: <DetailNews35 />
+                },
+                {
+                    path: "detail-news-36",
+                    element: <DetailNews36 />
+                },
+                {
+                    path: "detail-news-37",
+                    element: <DetailNews37 />
+                },
+                {
+                    path: "detail-news-38",
+                    element: <DetailNews38 />
+                },
+                {
+                    path: "detail-news-39",
+                    element: <DetailNews39 />
+                },
+                {
+                    path: "detail-news-40",
+                    element: <DetailNews40 />
+                },
+                {
+                    path: "detail-news-41",
+                    element: <DetailNews41 />
+                },
+                {
+                    path: "detail-news-42",
+                    element: <DetailNews42 />
+                },
+                {
+                    path: "detail-news-43",
+                    element: <DetailNews43 />
                 },
                 {
                     path: "dive-with-us",

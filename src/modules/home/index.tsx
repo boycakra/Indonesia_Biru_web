@@ -67,6 +67,11 @@ const Home = () => {
 
     return (
         <>
+        <div className="ribbon">
+                <span>Annual Report IBF 2024 | 🌍🌊 EARTH AND SEA - </span>
+                <a href="https://drive.google.com/file/d/1MHHqfF7DikcQEHBZmisp4_RDn37KgJje/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="read-more">Read More</a>
+            </div>
+            
             <div className="container-text">
                 <div className="txt-banner">
                     Indonesia Biru <br />

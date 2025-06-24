@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import imgCollab from '../../../assets/images/colabbaru.png'
+import imgCollab from '../../../assets/images/collabbaru.png'
 import imgPartner1 from '../../../assets/images/partner1.png';
 import imgPartner2 from '../../../assets/images/partner2.png';
 import imgPartner3 from '../../../assets/images/partner3.png';

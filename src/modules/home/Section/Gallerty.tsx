@@ -2,13 +2,27 @@ import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
+
+
+import imgccbarugal from '../../../assets/cnewgalry/cnewgalary (1).jpg'
+import imgccbarugal1 from '../../../assets/cnewgalry/cnewgalary (3).jpg'
+import imgccbarugal2 from '../../../assets/cnewgalry/cnewgalary (4).jpg'
+import imgccbarugal3 from '../../../assets/cnewgalry/cnewgalary (17).jpg'
+import imgccbarugal4 from '../../../assets/cnewgalry/cnewgalary (9).jpg'
+
+import imgbaru1 from '../../../assets/eventbaru/barulokal (7).jpg';
+import imgbaru2 from '../../../assets/eventbaru/barulokal (9).jpg';
+import imgbaru3 from '../../../assets/eventbaru/barulokal (4).jpg';
+import imgbaru4 from '../../../assets/eventbaru/barulokal (5).jpg';
+import imgbaru5 from '../../../assets/eventbaru/barulokal (8).jpg';
+
 import imgGallerynew1 from '../../../assets/images/newglar1 (2).jpeg';
-import imgGallerynew2 from '../../../assets/images/newglar1 (3).jpeg';
-import imgGallerynew3 from '../../../assets/images/newglar1 (1).jpeg';
+import imgGallerynew2 from '../../../assets/eventbaru/barulokal (3).jpg';
+import imgGallerynew3 from '../../../assets/images/newglar1 (3).jpeg';
 import imgGallerynew4 from '../../../assets/images/newglar1 (4).jpeg';
 import imgGallerynew5 from '../../../assets/images/newglar1 (5).jpeg';
 import imgGallery1 from '../../../assets/images/gal1 selam (1).jpeg';
-import imgGallery2 from '../../../assets/images/gal1 selam (2).jpeg';
+import imgGallery2 from '../../../assets/eventbaru/barulokal (1).jpg';
 import imgGallery3 from '../../../assets/images/gal1 selam (3).jpeg';
 import imgGallery4 from '../../../assets/images/gal1 selam (4).jpeg';
 import imgGallery5 from '../../../assets/images/gal1 selam (5).jpeg';
@@ -81,6 +95,28 @@ const Gallery = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={sliderRef} {...settings}>
+                <div className="container-gallery-slide">
+                        <div className="container-gallery-row-1">
+                            <img src={imgccbarugal} alt="gallery" className="img-gallery" />
+                            <img src={imgccbarugal1} alt="gallery" className="img-gallery" />
+                        </div>
+                        <div className="container-gallery-row-2">
+                            <img src={imgccbarugal2} alt="gallery" className="img-gallery" />
+                            <img src={imgccbarugal3} alt="gallery" className="img-gallery" />
+                            <img src={imgccbarugal4} alt="gallery" className="img-gallery" />
+                        </div>
+                    </div>
+                <div className="container-gallery-slide">
+                        <div className="container-gallery-row-1">
+                            <img src={imgbaru1} alt="gallery" className="img-gallery" />
+                            <img src={imgbaru2} alt="gallery" className="img-gallery" />
+                        </div>
+                        <div className="container-gallery-row-2">
+                            <img src={imgbaru3} alt="gallery" className="img-gallery" />
+                            <img src={imgbaru4} alt="gallery" className="img-gallery" />
+                            <img src={imgbaru5} alt="gallery" className="img-gallery" />
+                        </div>
+                    </div>
                 <div className="container-gallery-slide">
                         <div className="container-gallery-row-1">
                             <img src={imgGallerynew1} alt="gallery" className="img-gallery" />
