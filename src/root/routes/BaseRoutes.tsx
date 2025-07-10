@@ -52,6 +52,8 @@ import DetailNews40 from '../../modules/news/DetailNews40';
 import DetailNews41 from '../../modules/news/DetailNews41';
 import DetailNews42 from '../../modules/news/DetailNews42';
 import DetailNews43 from '../../modules/news/DetailNews43';
+import DetailNews44 from '../../modules/news/DetailNews44';
+import DetailNews45 from '../../modules/news/DetailNews45';
 import DiveWithUs from '../../modules/dive/DiveWithUs';
 import Template from './Template';
 
@@ -240,6 +242,14 @@ export default function BaseRoutes() {
                 {
                     path: "detail-news-43",
                     element: <DetailNews43 />
+                },
+                {
+                    path: "detail-news-44",
+                    element: <DetailNews44 />
+                },
+                {
+                    path: "detail-news-45",
+                    element: <DetailNews45 />
                 },
                 {
                     path: "dive-with-us",

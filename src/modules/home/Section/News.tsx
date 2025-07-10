@@ -45,6 +45,8 @@ import imgNews40 from "../../../assets/images/Events_Fred.png";
 import imgNews41 from "../../../assets/images/merged_image.jpg";
 import imgNews42 from "../../../assets/images/kerang.png";
 import imgNews43 from "../../../assets/biofarmavisit/biofarmavisit.png";
+import imgNews44 from "../../../assets/coralai/image3.png";
+import imgNews45 from "../../../assets/camerasea/image15.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -65,7 +67,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 41 && nextSlide === 42) {
+            if (currentSlide === 43 && nextSlide === 44) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -127,6 +129,50 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-45"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews45}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Peek into the daily lives of marine creatures </div>
+                                <div className="content-date-restoration">  By Elsa Dianita Aulia • 03 July 2025</div>
+                                <div className="content-desc-restoration">
+                                Ever wondered what the fish are up to today? 🐡 our camera’s got you covered! Now you can peek into the daily lives of marine creatures, live and in HD! 🎬🐠 
+                    
+                                
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-44"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews44}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  AI-Based Coral Categorization in Lombok Reefs</div>
+                                <div className="content-date-restoration">  By Elsa Dianita Aulia • 01 July 2025</div>
+                                <div className="content-desc-restoration">
+                                Indonesia Biru Foundation developed a deep learning model that can automatically categorize coral and biotic components in reef imagery using the YOLOv8 segmentation framework.
+                   
+                                
+                   
+                   
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-43"}>
                             <div className="container-content-restoration">
