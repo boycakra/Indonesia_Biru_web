@@ -47,6 +47,14 @@ import imgNews42 from "../../../assets/images/kerang.png";
 import imgNews43 from "../../../assets/biofarmavisit/biofarmavisit.png";
 import imgNews44 from "../../../assets/coralai/image3.png";
 import imgNews45 from "../../../assets/camerasea/image15.png";
+import imgNews46 from "../../../assets/coralplanting/image10.png";
+import imgNews47 from "../../../assets/Earth day/Judul.png";
+import imgNews48 from "../../../assets/coastel/judul.png";
+import imgNews49 from "../../../assets/sharkray/judul.png";
+import imgNews50 from "../../../assets/progrescoral/judul.png";
+import imgNews51 from "../../../assets/run/judul.png";
+import imgNews52 from "../../../assets/learningbythesea/judul.png";
+import imgNews53 from "../../../assets/seminar/judul.png";
 import arrowLeft from '../../../assets/icons/Arrow-left.svg';
 import arrowRight from '../../../assets/icons/Arrow-right.svg';
 
@@ -67,7 +75,7 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
         slidesToScroll: 1,
         beforeChange: (currentSlide: number, nextSlide: number) => {
             console.log(currentSlide, nextSlide)
-            if (currentSlide === 43 && nextSlide === 44) {
+            if (currentSlide === 52 && nextSlide === 53) {
                 setIsLastSlide(true)
             }
             if (currentSlide === 1 && nextSlide === 0) {
@@ -129,6 +137,149 @@ const News = React.forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className="carousel-container">
                 <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-53"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews53}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Empowering Cemare: Amore Pacific Supports Salt and Waste Management</div>
+                                <div className="content-date-restoration">   By Indonesia Biru Foundation • 12 July 2025</div>
+                                <div className="content-desc-restoration">
+                                19 June marked a meaningful moment for our team as we received generous support through a donation handover ceremony, followed by an inspiring village tour alongside community leaders and local residents. IBF was entrusted with two important contributions: funding support to improve local salt production facilities, and a waste shredding machine to strengthen community-based waste management efforts. Both donations reflect a shared commitment to empowering coastal communities to care for both their environment and their livelihoods.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-52"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews52}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Learning by the Sea: Cita Buana Students Dive into Coral Conservation </div>
+                                <div className="content-date-restoration">   By Indonesia Biru Foundation • 11 July 2025</div>
+                                <div className="content-desc-restoration">
+                                Pantai Kecinan had another special visit! This time, students from Cita Buana School came to explore our Coral Lab. The excitement and energy during this session were truly amazing. The students were full of energy and curiosity, ready to learn more about coral reefs and the efforts we are making to protect them.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-51"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews51}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration"> Trail Run with Purpose </div>
+                                <div className="content-date-restoration">   By Indonesia Biru Foundation • 10 July 2025</div>
+                                <div className="content-desc-restoration">
+                                Last May 29, IBF successfully held its first-ever trail run relay event—and what an extraordinary experience it was! 🏃‍♀️🌿 The event was joined by 6 enthusiastic teams and 1 brave solo runner, all coming together with one goal: to take action for the earth. Held at the stunning Cemare Beach, the race offered more than just a challenge—it kicked off the day with stunning views and fresh coastal energy. IBF seeks to show that sports can be more than a competition—they can be a powerful tool for awareness and change.👟
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-50"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews50}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">   Progress Report: Coral Reef Restoration Efforts in Asahan</div>
+                                <div className="content-date-restoration">  By Indonesia Biru Foundation • 09 July 2025</div>
+                                <div className="content-desc-restoration">
+                                From November 2024 to June 2025, IX, Indonesia Biru Foundation collaboration with Coral Reef Care and Seachange Indonesia, successfully deployed 50 mesh structures covering a total area of 150 m². These structures were installed just off the shore of Pearl Beach Resort, with a bigger goal in mind: restoring a total of 288 m² of reef habitat using this method. Why mesh? We selected mesh structures based on the substrate conditions in Gili Asahan, which are predominantly composed of coral rubble. The mesh helps stabilize these fragments and keeps them from sliding down the reef slope due to waves and currents. This creates a more secure, stable environment that encourages the natural growth and recovery of corals.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-49"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews49}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Progress Report: Raising Awareness for Shark and Ray Conservation </div>
+                                <div className="content-date-restoration">  By Indonesia Biru Foundation • 08 July 2025</div>
+                                <div className="content-desc-restoration">
+                                For the past 4 months, Indonesia Biru Foundation and Coral Reef Check have been busy in Tanjung Luar, East Lombok—collecting data on shark and ray landings, chatting with local fishers, and bringing ocean vibes into classrooms through school education. Why? Because sharks and rays aren’t just big fish, they’re the ocean’s top predators and natural ecosystem managers! And what if they disappear? The food chain gets wobbly, marine ecosystems lose their balance, and even we humans, especially fishers, can feel the effects.🦈🌊
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-48"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews48}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Coastal exploration workshop </div>
+                                <div className="content-date-restoration">  By Indonesia Biru Foundation • 07 July 2025</div>
+                                <div className="content-desc-restoration">
+                                The Earth’s been through a lot, but every little step counts, and those small actions can grow into something big. That’s why IBF and sekolah anak alam held a “Coastal Exploration Workshop” for a beach day with a twist! While exploring the shoreline, the kids discovered how coastal ecosystems work and why it’s so important to protect them. </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-47"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews47}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Flow The Coast - Earth day 2025 </div>
+                                <div className="content-date-restoration">  By Indonesia Biru Foundation • 06 July 2025</div>
+                                <div className="content-desc-restoration">
+                                To commemorate Earth Day, IBF joined in the celebration of the Flow the Coast event organized by PNMID (Palm is Not My ID) on April 20, 2025, at Impos Beach, North Lombok. In line with this year’s Earth Day theme, “Our Power, Our Planet,” the event aimed to encourage the community to take an active role in protecting and restoring our planet. From yoga by the sea to hands-on environmental action, the event created a meaningful space where people could reconnect with nature and be part of something impactful.
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                <div className="carousel-slide">
+                        <Link to={"/detail-news-46"}>
+                            <div className="container-content-restoration">
+                                <img
+                                    src={imgNews46}
+                                    alt="Slide 1"
+                                    className="img-restoration"
+                                    style={{ objectFit: 'cover', height: '200px' }}
+                                    
+                                />
+                                <div className="content-title-restoration">  Coral Planting at Seven Secrets by Hanging Gardens, Nipah, North Lombok </div>
+                                <div className="content-date-restoration">  By Elsa Dianita Aulia • 05 July 2025</div>
+                                <div className="content-desc-restoration">
+                                Coral reefs are more than just pretty underwater scenery! They’re home to thousands of marine species and act as natural shields that protect our coastlines from strong waves and erosion. 
+                         </div>
+                            </div>
+                        </Link>
+                    </div>
                 <div className="carousel-slide">
                         <Link to={"/detail-news-45"}>
                             <div className="container-content-restoration">
